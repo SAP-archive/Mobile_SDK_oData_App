@@ -21,14 +21,14 @@ MobileSDK frameworks used:
 - Supportability (for logging and tracing)
 - further libraries required due to dependencies
 
-![App Settings](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/Screenshots/Screenshots/settings.png)
+![App Settings](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/screenshots/Screenshots/settings.png)
 
-![Login UI](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/Screenshots/Screenshots/login.png)
+![Login UI](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/screenshots/Screenshots/login.png)
 
-![Main UI](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/Screenshots/Screenshots/appointments.png)
+![Main UI](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/screenshots/Screenshots/appointments.png)
 
-![Log Viewer](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/Screenshots/Screenshots/logviewer.png)
+![Log Viewer](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/screenshots/Screenshots/logviewer.png)
 
-![In-App Settings](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/Screenshots/Screenshots/inappsettings.png)
+![In-App Settings](https://github.wdf.sap.corp/MobileSDK/CRMODataApp/blob/screenshots/Screenshots/inappsettings.png)
 
 
