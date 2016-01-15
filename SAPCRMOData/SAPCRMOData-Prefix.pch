@@ -1,0 +1,30 @@
+//
+//  SAPCRMOData-Prefix.pch
+//  SAPCRMOData
+//
+//  Created by Paradi, Gabor on 02/10/14.
+//  Copyright (c) 2014 SAP-SE. All rights reserved.
+//
+
+#ifndef SAPCRMOData_SAPCRMOData_Prefix_pch
+#define SAPCRMOData_SAPCRMOData_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+
+#import "SAPSupportabilityFacade.h"
+#import "SAPClientLogManager.h"
+#import "SAPClientLogger.h"
+#import "SAPClientLogLevel.h"
+#import "SAPClientLogDestination.h"
+
+#define LOGGERID @"SAPCRMOData"
+
+#define LOGDEB(...) SAPLOGDEBUG(LOGGERID, ##__VA_ARGS__)
+#define LOGINF(...) SAPLOGINFO(LOGGERID, ##__VA_ARGS__)
+#define LOGWAR(...) SAPLOGWARNING(LOGGERID, ##__VA_ARGS__)
+#define LOGERR(...) SAPLOGERROR(LOGGERID, ##__VA_ARGS__)
+#define LOGFAT(...) SAPLOGFATAL(LOGGERID, ##__VA_ARGS__)
+
+#endif

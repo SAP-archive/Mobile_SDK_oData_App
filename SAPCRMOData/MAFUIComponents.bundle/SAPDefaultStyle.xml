@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<styles xmlns="http://schemas.sap.com/maf/2011/sap" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.sap.com/maf/2011/sap styles.xsd">
+    <!-- ***************** iOS colors ***************** -->
+    <Style TargetType="Window" platform="ios">
+        <Setter Property="Background" Value="#ff0000"/>
+    </Style>
+    <Style Key="WhiteView" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#FFFFFF"/>
+    </Style>
+    <Style TargetType="ScrollView" platform="ios">
+        <Setter Property="Background" Value="#DDDDDD"/>
+    </Style>
+    <Style Key="DarkGreyWindow" TargetType="Window" platform="ios">
+        <Setter Property="Background" Value="#666666"/>
+    </Style>
+    <Style Key="SapYellowGradient" TargetType="Window" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#fdb913" Offset="0.0"/>
+                        <GradientStop Color="#fdb913" Offset="0.5"/>
+                        <GradientStop Color="#f0ab00" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="TabBar" platform="ios">
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="Foreground" Value="#FABA00"/>
+    </Style>
+    <Style TargetType="Button" platform="ios">
+        <VisualStates>
+            <VisualState Name="Highlighted">
+                <Setter Property="Shadow" Value="#D6D6D6"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="#EFEFEF" Offset="0.0"/>
+                                <GradientStop Color="#DDDDDD" Offset="0.65"/>
+                                <GradientStop Color="#DDDDDD" Offset="1.0"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Border BorderBrush="#666666" BorderThickness="1"/>
+            </VisualState>
+            <VisualState Name="Disabled">
+                <Setter Property="Foreground" Value="#666666"/>
+                <Setter Property="Shadow" Value="#D6D6D6"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                                <GradientStop Color="#EFEFEF" Offset="0.65"/>
+                                <GradientStop Color="#DDDDDD" Offset="1.0"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Border BorderBrush="#666666" BorderThickness="1"/>
+            </VisualState>
+        </VisualStates>
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#FFFFFF" Offset="0.0"/>
+                        <GradientStop Color="#EFEFEF" Offset="0.65"/>
+                        <GradientStop Color="#EFEFEF" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Shadow" Value="#FFFFFF"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Border BorderBrush="#666666" BorderThickness="1" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="Button" Key="stdButton" TargetType="Button" platform="ios"/>
+    <Style BasedOn="stdButton" Key="EmphasizedButton" TargetType="Button" platform="ios">
+        <VisualStates>
+            <VisualState Name="Highlighted">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="#00599A" Offset="0.0"/>
+                                <GradientStop Color="#0062A9" Offset="0.5"/>
+                                <GradientStop Color="#007AB6" Offset="1.0"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Shadow" Value="#004A7D"/>
+                <Setter Property="Foreground" Value="#FFFFFF"/>
+                <Border BorderBrush="#002D4D" BorderThickness="1.2" CornerRadius="8"/>
+            </VisualState>
+            <VisualState Name="Disabled">
+                <Setter Property="Shadow" Value="#3DBFFF"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="#007AB6" Offset="0.0"/>
+                                <GradientStop Color="#0062A9" Offset="0.5"/>
+                                <GradientStop Color="#00599A" Offset="1.0"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Foreground" Value="#FFFFFF"/>
+                <Border BorderBrush="#00416E" BorderThickness="1.2" CornerRadius="8"/>
+            </VisualState>
+        </VisualStates>
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#007AB6" Offset="0.0"/>
+                        <GradientStop Color="#0062A9" Offset="0.5"/>
+                        <GradientStop Color="#00599A" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Shadow" Value="#3DBFFF"/>
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <Border BorderBrush="#00416E" BorderThickness="1.2" CornerRadius="8"/>
+    </Style>
+    <Style TargetType="SearchBar" platform="ios">
+        <Setter Property="BarStyle" Value="0"/>
+        <Setter Property="TintColor" Value="#353535"/>
+    </Style>
+    <!-- ListBox is mapped to TableView on iOS -->
+    <Style TargetType="TableView" platform="ios">
+        <Setter Property="Background" Value="#ffffff"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="1" CornerRadius="0"/>
+    </Style>
+    <Style Key="TableViewGroupedStyle" TargetType="TableView" platform="ios">
+        <Setter Property="Background" Value="#d3d7dd"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="1" CornerRadius="0"/>
+    </Style>
+    <!-- ListBox is mapped to TableView on iOS -->
+    <Style Key="PlainTableViewSectionHeader" TargetType="ListBox" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#333333" Offset="0.04"/>
+                        <GradientStop Color="#606060" Offset="0.06"/>
+                        <GradientStop Color="#4C4C4C" Offset="0.92"/>
+                        <GradientStop Color="#717171" Offset="0.95"/>
+                        <GradientStop Color="#3F3F3F" Offset="0.98"/>
+                        <GradientStop Color="#4D4D4D" Offset="1.00"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style TargetType="ListBoxItem" platform="ios">
+        <VisualStates>
+            <VisualState Name="Selected">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="#007AB6" Offset="0.0"/>
+                                <GradientStop Color="#0062A9" Offset="0.5"/>
+                                <GradientStop Color="#00599A" Offset="1.0"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Foreground" Value="#FFFFFF"/>
+                <Setter Property="DetailsForeground" Value="#FFFFFF"/>
+            </VisualState>
+            <VisualState Name="SelectedEditable">
+                <Setter Property="Background" Value="#EBF4F7"/>
+                <Setter Property="Foreground" Value="#0074BB"/>
+                <Setter Property="DetailsForeground" Value="#FFFFFF"/>
+            </VisualState>
+        </VisualStates>
+        <Setter Property="Background" Value="#FFFFFF"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="DetailsForeground" Value="#000000"/>
+        <Border BorderBrush="#FF0000" BorderThickness="2"/>
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="ListBoxItem" Key="TableViewCellNormal" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <Setter Property="FontSize" Value="15"/>
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="ListBoxItem" Key="TableViewCellSubtitle" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="DetailsFontFamily" Value="Helvetica"/>
+        <Setter Property="DetailsFontSize" Value="15"/>
+        <Setter Property="DetailsForeground" Value="#666666"/>
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="ListBoxItem" Key="TableViewCellValue1" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="DetailsFontFamily" Value="Helvetica"/>
+        <Setter Property="DetailsForeground" Value="#0074BB"/>
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="ListBoxItem" Key="TableViewCellValue2" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="DetailsFontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="DetailsFontSize" Value="13"/>
+        <Setter Property="DetailsForeground" Value="#0074BB"/>
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="ListBoxItem" Key="MAFLabelWithControlTableViewCell" TargetType="ListBoxItem" platform="ios"/>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="ListBoxItem" Key="TableViewCellWithLightGrayBackground" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="Background" Value="#F7F7F7"/>
+        <!-- MISSING: inner glow 5px -->
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="TableViewCellSubtitle" Key="TableViewCellSubtitleWithLightGrayBackground" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="Background" Value="#F7F7F7"/>
+        <!-- MISSING: inner glow 5px -->
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="TableViewCellValue1" Key="TableViewCellValue1WithLightGrayBackground" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="Background" Value="#F7F7F7"/>
+        <!-- MISSING: inner glow 5px -->
+    </Style>
+    <!-- ListBoxItem is mapped to TableViewCell on iOS -->
+    <Style BasedOn="TableViewCellValue2" Key="TableViewCellValue2WithLightGrayBackground" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="Background" Value="#F7F7F7"/>
+        <!-- MISSING: inner glow 5px -->
+    </Style>
+    <Style TargetType="SegmentedControl" platform="ios">
+        <UnSelectedBackgroundImage Height="30" ImageSource="MAFUIComponents.bundle/segcontrol_uns-1.png" Width="30"/>
+        <SelectedBackgroundImage Height="30" ImageSource="MAFUIComponents.bundle/segcontrol_sel-1.png" Width="30"/>
+        <DividerImageSelUns Height="30" ImageSource="MAFUIComponents.bundle/segcontrol_sel-uns-1.png" Width="3"/>
+        <DividerImageUnsSel Height="30" ImageSource="MAFUIComponents.bundle/segcontrol_uns-sel-1.png" Width="3"/>
+        <DividerImageUnsUns Height="30" ImageSource="MAFUIComponents.bundle/segcontrol_uns-uns-1.png" Width="1"/>
+        <Setter Property="iosStyle" Value="UISegmentedControlStylePlain"/>
+        <Setter Property="TextColor" Value="#333333"/>
+    </Style>
+    <Style Key="SegmentedControlHD" TargetType="SegmentedControl" platform="ios">
+        <UnSelectedBackgroundImage Height="88" ImageSource="MAFUIComponents.bundle/segcontrol_uns-2x.png" Width="57"/>
+        <SelectedBackgroundImage Height="88" ImageSource="MAFUIComponents.bundle/segcontrol_sel-2x.png" Width="57"/>
+        <DividerImageSelUns Height="30" ImageSource="MAFUIComponents.bundle/segcontrol_sel-uns-2x.png" Width="3"/>
+        <DividerImageUnsSel Height="30" ImageSource="MAFUIComponents.bundle/segcontrol_uns-sel-2x.png" Width="3"/>
+        <DividerImageUnsUns Height="88" ImageSource="MAFUIComponents.bundle/segcontrol_uns-uns-2x.png" Width="3"/>
+        <Setter Property="iosStyle" Value="UISegmentedControlStylePlain"/>
+        <Setter Property="TextColor" Value="#333333"/>
+    </Style>
+    <Style Key="SampleTextView" TargetType="TextView" platform="ios">
+        <Setter Property="TextColor" Value="#555555"/>
+        <Setter Property="Background" Value="#ffffff"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+    <Style TargetType="Label" platform="ios">
+        <VisualStates>
+            <VisualState Name="Highlighted">
+                <Setter Property="Shadow" Value="#FFFFFF"/>
+            </VisualState>
+        </VisualStates>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Foreground" Value="#444444"/>
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+    </Style>
+    <Style BasedOn="Label" Key="stdLabel" TargetType="Label" platform="ios"/>
+    <Style BasedOn="stdLabel" Key="PlainSectionHeaderLabel" TargetType="Label" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+    </Style>
+    <Style BasedOn="stdLabel" Key="LabelWithLightGreyBackground" TargetType="Label" platform="ios">
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+    </Style>
+    <Style BasedOn="LabelWithLightGreyBackground" Key="MAFLogonUIHeaderDescriptionDefault" TargetType="Label" platform="ios">
+        <Setter Property="FontFamily" Value="Helvetica"/>
+    </Style>
+    <Style BasedOn="stdLabel" Key="LabelWithBlackFonts" TargetType="Label" platform="ios">
+        <Setter Property="Foreground" Value="#000000"/>
+    </Style>
+    <Style Key="GroupedTableHeader" TargetType="Label" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+    </Style>
+    <Style Key="GroupedTableFooter" TargetType="Label" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+    </Style>
+    <Style Key="TitleBarLabel" TargetType="Label" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="#F0AB00"/>
+    </Style>
+    <Style Key="SectionHeaderLabel" TargetType="Label" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+        <Setter Property="Foreground" Value="#4A4A4A"/>
+    </Style>
+    <Style Key="CellSummary" TargetType="Label" platform="ios">
+        <Setter Property="Background" Value="#FFFFFF00"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="DetailsFontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="DetailsFontSize" Value="13"/>
+        <Setter Property="DetailsForeground" Value="#0074BB"/>
+    </Style>
+    <Style Key="CellBadgeUnselected" TargetType="Label" platform="ios">
+        <Setter Property="Background" Value="#0676C1FF"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+    </Style>
+    <Style Key="CellBadgeSelected" TargetType="Label" platform="ios">
+        <Setter Property="Background" Value="#FFFFFFFF"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="#0676C1"/>
+    </Style>
+    <Style TargetType="TextBox" platform="ios">
+        <Setter Property="Background" Value="#FEFEFE"/>
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="1" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="TextBox" Key="TextFieldInTableViewCell" TargetType="TextBox" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+        <Border BorderThickness="0"/>
+    </Style>
+    <Style BasedOn="TextBox" Key="TextFieldWithError" TargetType="TextBox" platform="ios">
+        <Border BorderBrush="#FF4A4A" BorderThickness="1" CornerRadius="8"/>
+    </Style>
+    <!--Logon UI elements -->
+    <Style BasedOn="ListBox" Key="TableViewWhite" TargetType="ListBox">
+        <Setter Property="Background" Value="#ffffff"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="ListBox" Key="TableViewNoBorder" TargetType="ListBox">
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="ListBoxItem" Key="TableViewCellDisabled" TargetType="ListBoxItem" platform="ios">
+        <Setter Property="Foreground" Value="#D3D6D3"/>
+    </Style>
+    <Style BasedOn="TextBox" Key="MAFLogonUITextFieldHint" TargetType="TextBox" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="FontFamily" Value="Helvetica-Oblique"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="TextBox" Key="MAFLogonUITextFieldHintAlignmentRight" TargetType="TextBox" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="FontFamily" Value="Helvetica-Oblique"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="TextBox" Key="MAFLogonUITextField" TargetType="TextBox" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="Foreground" Value="#0074BB"/>
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="TextBox" Key="MAFLogonUITextFieldAlignmentLeft" TargetType="TextBox" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="MAFLogonUITextField" Key="MAFLogonUITextFieldWithError" TargetType="TextBox" platform="ios">
+        <Border BorderBrush="#FF4A4A" BorderThickness="1" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="EmphasizedButton" Key="MAFLogonUIEmphasizedButton" TargetType="Button" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style Key="MAFLogonUILinkButton" TargetType="Button" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="Foreground" Value="#0000FF"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="stdButton" Key="MAFLogonUIStdButton" TargetType="Button" platform="ios">
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style BasedOn="TextBox" Key="MAFLogonUITextFieldDisabled" TargetType="TextBox" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+        <!--<Border BorderBrush="#ABABAB" BorderThickness="1" CornerRadius="8" />-->
+    </Style>
+    <Style Key="MAFLogonUILabelWarning" TargetType="Label" platform="ios">
+        <Setter Property="Foreground" Value="#FF0000"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontFamily" Value="Helvetica"/>
+    </Style>
+    <Style Key="MAFLogonUILabelDisabled" TargetType="Label" platform="ios">
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+        <Setter Property="VerticalContentAlignment" Value="Top"/>
+    </Style>
+    <Style Key="MAFLogonUIHeaderTitleIPadSplashUnlock" TargetType="Label" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="FontSize" Value="44"/>
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+    </Style>
+    <Style Key="MAFLogonUIHeaderDescriptionIPadSplashUnlock" TargetType="Label" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="FontSize" Value="35"/>
+        <Setter Property="Background" Value="#00000000"/>
+        <Setter Property="FontFamily" Value="Helvetica"/>
+    </Style>
+    <Style BasedOn="Label" Key="MAFLogonUIHeaderTitleSplashUnlock" TargetType="Label" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+    </Style>
+    <Style BasedOn="Label" Key="MAFLogonUIHeaderDescriptionSplashUnlock" TargetType="Label" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="FontFamily" Value="Helvetica"/>
+    </Style>
+    <Style TargetType="Image" id="bundleimage">
+        <ImageBrush Height="20" ImageSource="MAFUIComponents.bundle/text_field_error_symbol.png" Width="20"/>
+    </Style>
+    <Style TargetType="Image" id="sapimage">
+        <ImageBrush Height="36" ImageSource="MAFUIComponents.bundle/SAPLogo@2x.png" Width="73"/>
+    </Style>
+    <Style TargetType="Image" id="sapimage_base64encoded">
+        <ImageBrush Height="33" ImageSource="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAhCAYAAABtNH0cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ         bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp         bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6         eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz         NDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo         dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw         dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv         IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS         ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD         cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNl         SUQ9InhtcC5paWQ6M0JDMjhCQzczM0NFMTFFMEExNkRBQzM5MkUxNDRFQUUiIHhtcE1NOkRvY3Vt         ZW50SUQ9InhtcC5kaWQ6M0JDMjhCQzgzM0NFMTFFMEExNkRBQzM5MkUxNDRFQUUiPiA8eG1wTU06         RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQkMyOEJDNTMzQ0UxMUUwQTE2         REFDMzkyRTE0NEVBRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozQkMyOEJDNjMzQ0UxMUUw         QTE2REFDMzkyRTE0NEVBRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w         bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvouZlgAAAXDSURBVHja7JhZTBtHGIB/O2tsoPjgDkfs         RkACIcVA26RBUUzaNEBSxUpfWvXBtrSK+tBGoCov7QMgVVVPmVA1qSpZwEur9KE1aqWmqpQ4LzRq         LpODSIEUQ4jDaTtAAYOxOzOLje3d9cERkMhI413Pzvzzzzf//PPPCOAXpw+ep3eE6Gd+i0MwwUnF         BQq8PmrLIhAITPC2gsavFLjdi+gp3HIQhEITvJtF+/8iEPNb0xIMO+jgoq0HAkN4v4AOL0YgFkIK         5GIh6PfIQVcsB3W6mCXHOu4Gy9AMXHn8H5j7pjj7anszB1RSEau8+eoYaRuc9CWorxJZRN1dbi90         j8+R/qxjc6tYDgjC6WKakw982Y01SyRKlSrAeDgHwdgWk1wXci/NXSPQcn08UKaSiaD/VDFn/fa7         TjD88SikrKkqCxoPZMU8FtvkPDRcsoO5dzJOS0C7w5kympdRbqJgETwe0BfLoK02P2YIjPVsA5sD         zRBq7894hvmStlAaUpfkRW9c41FJE+BXrYroy5LFmxcjQiAg8pNFC6oUCoxv5MVtaZaBKTDfdzCD         Wcq6vWkRwWGrC64PvpXFc23HlaDJSw6VxZW9XhN8XEFHk0fJEwS+/TkykEvYlmBzuaHDOhb4X5ad         DBqVNFC34aINdbYY+I6/qWQJETs8USiH9pujywU8ICy2yRC5XEn3UhpY/nVFdoyN++hYwFLJKJw6         pEzh/Fh+/ja45jyscr06A1RyCVjt06GKlaVH7VC7WwHyBOGyXB4Q1W33Au9qNAGXDSVoAkJjPw3W         2+vlh9C0PyYIPqSDULhkslzJWKMkSpPOgnL7zRFoujQQUobr4UHGkvQYWKAtz9IIkm21T8HZrids         fyEXs3RbkmmC5tfouDaUWbfHFz6zAYXLM6H/o0ow1r4I6qykiGuRzLSEHa2beybYJo3kRvUR4X3E         Wg9D+LQqLggCgQCET2c80HlvnN/BocHVH8iBWx+UQ/+ZV8B4bCfjB/BMBmUyuPCY48k0dNwYZpWr         tycjc09i2vINMEg2jm10FZlR6yFZJvjsIL0S50sNOGdg0OmG9uvDoH85O/LWpZBAfVUuyc1/2aAJ         ZX+5Zid72+y4NgyWPie3o6vIAutQHy+Iptd3kKcyVQLaknSQJ3JYG55Av4/AccIX1SuCQEAMOmaT         8YvhQg92GwjG9pgaNh5RgVIhRu3ug76SOyAy3x0F18w8eo6BtjQj1GnuSYeGzge8ILD8aKkTyQUf         BoEc41eHVwyB+Ihg0zL81APV526A5aEzNqeHoOkrs0HHAc/6eApsE7NELlGYw7rwTK80jsA6tv9j         Z3zC16uDwJw1wrYfS6+DZJUiEbR7M0D3ag6oc1N4BRhPFHGabeedsYDZWh44uGMKZBUDjvjPDuY7         o2D4sYeB0HJk1RCYlXX6TzRtIInoG1ITwXhyFwKTGZdwm2OWhOCaAv5tteXKANQfUkY/18x6yASd         RfWX/I4JWo+uCQQGxIcXAyD0+3LBfHuEdMoZeLQeXfNTMYaFQbMCqtZry1ba52Bfr31bQ6+lHlRO         SoLI/tQNmsJUaHuvFM38bjh72UaAWIeYYzY2/ca6wnW5HuCCwCynCf47xu9q6bXWg8p4IWHa7pqT         NdYVBA26APz/NyxxO1ETnKuj16M7KokSLGgKUolFrImpo53C3D0C6jxp2BpfQJBFoCmKsZ/w0BvH         CeeP0evFnZKKKagJ2+NXk8zdw9Dwcw/nN3W+FG59cjB+i8AHqHWEQOKIvx+6qAYUTFV/cxXM1pHo         3ntmAZp/72ViBI7U0TWE4zLObB2c5G3HBrGU8XL4fn0hMAZ36rfAVR3xEUkiYtaaXewLFuujSQSL         OTtoitLidXIBq8BLJGrAROQgS/jhOP0sXBIGgSMa8Sa8b0YQ3qJ9MUae+AS5uhB7cyYC4Vl2KHwO         YXOC2BAImw3EhkHwg9gMjvLzjYSA0/8CDAB6Up2krsGTjgAAAABJRU5ErkJggg==" Width="66"/>
+        <HighlightedImage Height="35" ImageSource="MAFUIComponents.bundle/text_field_error_symbol.png" Width="68"/>
+    </Style>
+    <!-- START MAFCalendar styles -->
+    <!-- START LIST VIEW -->
+    <Style Key="CalendarListViewHeaderText" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="17"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Shadow" Value="#000000"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#727272" Offset="0.0"/>
+                        <!-- FINISHED Welter-->
+                        <GradientStop Color="#727272" Offset="1.0"/>
+                        <!-- FINISHED Welter-->
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarListViewHeaderTextCurrentDay" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="17"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Shadow" Value="#000000"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#343434" Offset="0.0"/>
+                        <!-- FINISHED Welter-->
+                        <GradientStop Color="#454545" Offset="1.0"/>
+                        <!-- FINISHED Welter-->
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarListViewHourTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#000000"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="14"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarListViewHourPeriodTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarListViewAppointmentTitleTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#000000"/>
+        <!-- FINISHED -->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FIXME Welter (is bold ok ?)-->
+        <Setter Property="FontSize" Value="16"/>
+        <!-- FIXME Welter (is this really 16 pt ?)-->
+    </Style>
+    <Style Key="CalendarListViewAppointmentLocationTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica-Regular"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="FontSize" Value="14"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarListViewAppointmentCell" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#F7F7F7"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarListViewCellSeparator" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#999999"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <!-- END LIST VIEW -->
+    <!-- START MONTH VIEW -->
+    <Style Key="CalendarMonthViewMonthTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="Shadow" Value="#000000"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="FontSize" Value="22"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#8F8F8F" Offset="0.0"/>
+                        <!-- FINISHED Welter -->
+                        <GradientStop Color="#545454" Offset="1.0"/>
+                        <!-- FINISHED Welter -->
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarMonthViewWeekDayTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="Shadow" Value="#000000"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="FontSize" Value="10"/>
+        <!-- FINISHED Welter -->
+    </Style>
+    <Style Key="CalendarMonthViewDayTile" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#DDDDDD"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="Shadow" Value="#FFFFFF"/>
+        <!-- FIXME Welter -->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="23"/>
+        <!-- FINISHED Welter -->
+        <Border BorderBrush="#AAAEB6" BorderThickness="1"/>
+        <!-- FINISHED -->
+    </Style>
+    <Style Key="CalendarMonthViewDayTileSelected" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#007AB6" Offset="0.0"/>
+                        <!-- FINISHED Welter-->
+                        <GradientStop Color="#0062A9" Offset="0.5"/>
+                        <!-- FINISHED Welter-->
+                        <GradientStop Color="#00599A" Offset="0.55"/>
+                        <!-- FINISHED Welter-->
+                        <GradientStop Color="#0062A9" Offset="0.71"/>
+                        <!-- FINISHED Welter-->
+                        <GradientStop Color="#007AB6" Offset="1.00"/>
+                        <!-- FINISHED Welter-->
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Border BorderBrush="#333333" BorderThickness="1"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarMonthViewDayTileCurrent" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="Background" Value="#454545"/>
+        <Border BorderBrush="#333333" BorderThickness="1"/>
+        <!-- FINISHED Welter -->
+        <!-- FINISHED Welter -->
+    </Style>
+    <!-- DEACTIVATED
+     <Style TargetType="Control" Key="CalendarMonthViewDayTileCurrentSelected" platform="ios"><Border BorderBrush="#364F72" BorderThickness="1"/><Setter Property="Background" Value="#187FE4"/></Style>-->
+    <Style Key="CalendarMonthViewMonthNavigationArrows" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter -->
+    </Style>
+    <Style Key="CalendarMonthViewDayTileTextImage" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#333333" Offset="0.0"/>
+                        <!-- FINISHED Welter -->
+                        <GradientStop Color="#333333" Offset="1.0"/>
+                        <!-- FINISHED Welter -->
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarMonthViewDayTileDisabledTextImage" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#999999"/>
+        <!-- FINISHED Welter -->
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#999999" Offset="0.0"/>
+                        <!-- FINISHED Welter -->
+                        <GradientStop Color="#999999" Offset="1.0"/>
+                        <!-- FINISHED Welter -->
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- END MONTH VIEW -->
+    <!-- START DAY VIEW -->
+    <Style Key="CalendarDayViewCanvas" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#FFFFFF"/>
+        <!-- FINISHED Welter -->
+    </Style>
+    <Style Key="CalendarDayViewGutter" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#EDEDED"/>
+        <!-- FIXME (not defined by UX)-->
+    </Style>
+    <Style Key="CalendarDayViewCanvasHourLabelColor" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <!-- FINISHED Welter -->
+    </Style>
+    <Style Key="CalendarDayViewCanvasFullHourLine" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#999999"/>
+        <!-- FINISHED Welter -->
+    </Style>
+    <Style Key="CalendarDayViewCanvasHalfHourLine" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#BABABA"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarDayViewDayTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED (fetched from UX image)-->
+        <Setter Property="Shadow" Value="#000000"/>
+        <!-- FINISHED Welter (fetched from UX image)-->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED Welter (fetched from UX image)-->
+        <Setter Property="FontSize" Value="17"/>
+        <!-- FIXME (guessed from UX image)-->
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#939393" Offset="0.0"/>
+                        <!-- FINISHED Welter -->
+                        <GradientStop Color="#545454" Offset="1.0"/>
+                        <!-- FINISHED Welter -->
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarDayViewFulldayBackground" platform="ios">
+        <Setter Property="Background" Value="#557799"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarDayViewDayTextLabelCurrentDay" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FIXME (undefined from UX) -->
+        <Setter Property="Shadow" Value="#000000"/>
+        <!-- FINISHED Welter (fetched from UX image)-->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED Welter (fetched from UX image)-->
+        <Setter Property="FontSize" Value="17"/>
+        <!-- FIXME (guessed from UX image)-->
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#6b6b6b" Offset="0.0"/>
+                        <!-- FINISHED Welter -->
+                        <GradientStop Color="#000000" Offset="1.0"/>
+                        <!-- FINISHED Welter -->
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarDayViewDayNavigationArrows" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarDayViewHourIndicatorColor" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#0074BB"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarDayViewHourKnobIndicator" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#00A1E4"/>
+        <!-- FINISHED Welter-->
+        <Border BorderBrush="#FFFFFF" BorderThickness="1"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <!-- END DAY VIEW -->
+    <!-- START WEEK VIEW -->
+    <!-- for ipad -->
+    <Style Key="CalendarWeekViewWeekdayTextLabel_IPad" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED -->
+        <Setter Property="FontSize" Value="14"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Background" Value="#777777"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewWeekdayNumberTextLabel_IPad" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="38"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewWeekdayTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <!-- FINISHED -->
+        <Setter Property="FontSize" Value="12"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Background" Value="#757575"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewCurrentWeekdayTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Background" Value="#454545"/>
+    </Style>
+    <Style Key="CalendarWeekViewWeekdayNumberTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="13"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewCurrentWeekdayNumberTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewFullHourSeparatorColor" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#999999"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewHalfHourSeparatorColor" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#BABABA"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewHourIndicatorColor" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#0074BB"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewHourKnobIndicator" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#00A1E4"/>
+        <!-- FINISHED Welter-->
+        <Border BorderBrush="#FFFFFF" BorderThickness="1"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewHourLabelFont" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="13"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewHourLabelHighlightColor" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#000000"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewHourPeriodLabelColor" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#666666"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewGutter" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#EFEFEF"/>
+        <!-- FIXME (undefined by UX) -->
+    </Style>
+    <Style Key="CalendarWeekViewCanvas" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewHourView" platform="ios">
+        <Setter Property="Background" Value="#ffffff"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarWeekViewTopHeader" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#cccccc"/>
+        <Setter Property="Foreground" Value="#4d4d4d"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+    <Style Key="CalendarWeekViewVerticalShadowGradient" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#888888ff" Offset="0.0"/>
+                        <GradientStop Color="#ffffff00" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarWeekViewHorizontalShadowGradient" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#666666ff" Offset="0.0"/>
+                        <GradientStop Color="#ffffff00" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarWeekViewLowerHeaderShadowGradient" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#444444ff" Offset="0.0"/>
+                        <GradientStop Color="#66666600" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarWeekViewTopHeaderShadowGradient" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#666666ff" Offset="0.0"/>
+                        <GradientStop Color="#ffffff00" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- START IPADMONTH VIEW -->
+    <!-- The header of the MonthView-->
+    <Style Key="CalendarMonthViewMonthdayTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <!-- FINISHED -->
+        <Setter Property="FontSize" Value="13"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Background" Value="#777777"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarMonthViewCurrentMonthdayTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="Background" Value="#454545"/>
+    </Style>
+    <!-- The header of the MonthView End-->
+    <Style Key="CalendarMonthViewWeekLabelFont" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#444444"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="12"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarMonthViewWeekLabelHighlightColor" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#555555"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <!-- FINISHED Welter-->
+        <Setter Property="FontSize" Value="13"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarMonthViewGutter" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#EFEFEF"/>
+        <!-- FIXME (undefined by UX) -->
+    </Style>
+    <Style Key="CalendarMonthViewCanvas" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#cccccc"/>
+    </Style>
+    <!-- New stuff -->
+    <Style Key="CalendarMonthViewCurrentMonthdayBoxNumberTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#777777"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+    <Style Key="CalendarMonthViewCurrentMonthdayBoxAppointment" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#4380ab"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+    <Style Key="CalendarMonthViewCurrentMonthdayDecoratorBox" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#bbe8ff"/>
+    </Style>
+    <Style Key="CalendarMonthViewMonthdayBoxNumberTextLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#777777"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+    <Style Key="CalendarMonthViewMonthdayBoxAppointment" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#4380ab"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+    <Style Key="CalendarMonthViewMonthdayDecoratorBox" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#bbe8ff"/>
+    </Style>
+    <Style Key="CalendarMonthViewCurrentDayBox" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#ffffff"/>
+        <Border BorderBrush="#555555"/>
+    </Style>
+    <Style Key="CalendarMonthViewDayBox" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#ffffff"/>
+    </Style>
+    <Style Key="CalendarMonthViewWeekView" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#ffffff"/>
+    </Style>
+    <Style Key="CalendarMonthViewTopHeader" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#cccccc"/>
+        <Setter Property="Foreground" Value="#4d4d4d"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="16"/>
+    </Style>
+    <Style Key="CalendarMonthViewSelectedMonthdayBoxAppointment" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#ffffff"/>
+        <Setter Property="Background" Value="#4380ab"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+    <Style Key="CalendarMonthViewVerticalShadowGradient" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#888888ff" Offset="0.0"/>
+                        <GradientStop Color="#ffffff00" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarMonthViewHorizontalShadowGradient" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#666666ff" Offset="0.0"/>
+                        <GradientStop Color="#ffffff00" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarMonthViewLowerHeaderShadowGradient" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#444444ff" Offset="0.0"/>
+                        <GradientStop Color="#66666600" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="CalendarMonthViewTopHeaderShadowGradient" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#666666ff" Offset="0.0"/>
+                        <GradientStop Color="#ffffff00" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- START APPOINTMENT VIEW -->
+    <Style Key="CalendarAppointmentViewTitleLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#2B5C6D"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarAppointmentViewLocationLabel" TargetType="Control" platform="ios">
+        <Setter Property="Foreground" Value="#2B5C6D"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarAppointmentView" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#D4F1FF"/>
+        <!-- FINISHED Welter-->
+        <Border BorderBrush="#0076CB" BorderThickness="1"/>
+        <!-- FINISHED Welter-->
+    </Style>
+    <Style Key="CalendarAppointmentViewInvitation" TargetType="Control" platform="ios">
+        <Setter Property="Background" Value="#AAAAAA"/>
+        <!-- FIXME (undefined by UX) -->
+        <Border BorderBrush="#FFFFFF" BorderThickness="1"/>
+        <!-- FIXME (undefined by UX) -->
+    </Style>
+    <!-- END APPOINTMENT VIEW -->
+    <!-- END MAFCalendar styles -->
+    <Style Key="ActionBar" TargetType="Control" platform="ios">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#8E8E8E" Offset="0.0"/>
+                        <GradientStop Color="#646464" Offset="0.5"/>
+                        <GradientStop Color="#505050" Offset="0.5"/>
+                        <GradientStop Color="#444444" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style Key="ActionbarButton" TargetType="Button" platform="ios">
+        <VisualStates>
+            <VisualState Name="Highlighted">
+                <Setter Property="Foreground" Value="#FFFFFF"/>
+                <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="#797979" Offset="0.0"/>
+                                <GradientStop Color="#4E4E4E" Offset="0.5"/>
+                                <GradientStop Color="#313131" Offset="0.5"/>
+                                <GradientStop Color="#323232" Offset="1.0"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Border BorderBrush="#000000" BorderThickness="1" CornerRadius="8"/>
+            </VisualState>
+            <VisualState Name="Disabled">
+                <Setter Property="Foreground" Value="#FFFFFF"/>
+                <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="#797979" Offset="0.0"/>
+                                <GradientStop Color="#4E4E4E" Offset="0.5"/>
+                                <GradientStop Color="#313131" Offset="0.5"/>
+                                <GradientStop Color="#323232" Offset="1.0"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Border BorderBrush="#000000" BorderThickness="1" CornerRadius="8"/>
+            </VisualState>
+        </VisualStates>
+        <Setter Property="Foreground" Value="#FFFFFF"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#797979" Offset="0.0"/>
+                        <GradientStop Color="#4E4E4E" Offset="0.5"/>
+                        <GradientStop Color="#313131" Offset="0.5"/>
+                        <GradientStop Color="#323232" Offset="1.0"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Border BorderBrush="#FFFFFF" BorderThickness="1" CornerRadius="8"/>
+        <Border BorderBrush="#000000" BorderThickness="1"/>
+    </Style>
+    <Style TargetType="NavigationBar" platform="ios">
+        <Setter Property="BarStyle" Value="1"/>
+    </Style>
+    <Style TargetType="ToolBar" platform="ios">
+        <Setter Property="iosStyle" Value="UIBarStyleDefault"/>
+        <Setter Property="TintColor" Value="#666666"/>
+    </Style>
+    <Style TargetType="BarButtonItem" platform="ios">
+        <Setter Property="iosStyle" Value="UIBarButtonItemStyleBordered"/>
+    </Style>
+    <Style Key="plainBarButton" TargetType="BarButtonItem" platform="ios">
+        <Setter Property="iosStyle" Value="UIBarButtonItemStylePlain"/>
+    </Style>
+    <Style TargetType="ActivityIndicator" platform="ios">
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="TextColor" Value="#F0AB00"/>
+        <Setter Property="spinnerColor" Value="#F0AB00"/>
+        <Setter Property="boxColor" Value="#666666"/>
+        <Setter Property="coverColor" Value="#0000007F"/>
+    </Style>
+    <!--default style-->
+    <Style TargetType="ProgressView" platform="ios">
+        <Setter Property="progressTintColor" Value="#A5a5a5"/>
+        <Setter Property="trackTintColor" Value="#333333"/>
+    </Style>
+    <Style Key="LightProgressBar" TargetType="ProgressView" platform="ios">
+        <Setter Property="progressTintColor" Value="#7762A9"/>
+        <Setter Property="trackTintColor" Value="#AAAAAA"/>
+    </Style>
+    <!--default style-->
+    <Style TargetType="Slider" platform="ios">
+        <Setter Property="minimumTrackTintColor" Value="#0062A9"/>
+        <Setter Property="maximumTrackTintColor" Value="#DDDDDD"/>
+    </Style>
+    <Style BasedOn="TextBox" Key="CellTextField" TargetType="TextBox" platform="ios">
+        <Setter Property="Background" Value="#0000000"/>
+        <Setter Property="TextColor" Value="#0000AA"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Border BorderBrush="#ABABAB" BorderThickness="0" CornerRadius="8"/>
+    </Style>
+    <Style BasedOn="EmphasizedButton" Key="CellButton" TargetType="Button" platform="ios"/>
+    <Style Key="CellLabel" TargetType="Label" platform="ios">
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="TextColor" Value="#222222"/>
+        <Setter Property="Background" Value="#ffffff00"/>
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+    </Style>
+    <Style Key="CellSwitch" TargetType="Switch" platform="ios">
+        <Setter Property="thumbTintColor" Value="#FABA00"/>
+        <OnImage Height="30" ImageSource="accept_24.png" Width="30"/>
+        <OffImage Height="30" ImageSource="decline_24.png" Width="30"/>
+    </Style>
+    <Style Key="TableViewCellWithControlKey" TargetType="TableViewCellWithControl" platform="ios">
+        <Setter Property="Background" Value="#ffffff"/>
+        <Setter Property="TextColor" Value="#222222"/>
+        <Setter Property="FontFamily" Value="Helvetica-Bold"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="SubStyle" TargetType="Button" Value="CellButton"/>
+        <Setter Property="SubStyle" TargetType="TextField" Value="CellTextField"/>
+        <Setter Property="SubStyle" TargetType="Switch" Value="CellSwitch"/>
+        <Setter Property="SubStyle" TargetType="Label" Value="CellLabel"/>
+    </Style>
+    <Style BasedOn="TableViewCellWithControlKey" Key="TableViewCellWithControlStdButton" TargetType="TableViewCellWithControl" platform="ios">
+        <Setter Property="SubStyle" TargetType="Button" Value="stdButton"/>
+    </Style>
+</styles>

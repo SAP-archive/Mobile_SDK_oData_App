@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Account" representedClassName="Account" parentEntity="BaseItem">
+        <attribute name="academicTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isMine" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name1" optional="YES" attributeType="String">
+            <userInfo/>
+        </attribute>
+        <attribute name="name2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <entity name="Appointment" representedClassName="Appointment" parentEntity="BaseItem" syncable="YES">
+        <attribute name="changedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isAllDay" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isMine" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="responsible" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BaseItem" representedClassName="BaseItem" isAbstract="YES" syncable="YES">
+        <attribute name="descript_ion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="editResourcePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourcePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="typeName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Collection" inverseName="toItems" inverseEntity="Collection" syncable="YES"/>
+    </entity>
+    <entity name="Collection" representedClassName="Collection" syncable="YES">
+        <attribute name="collectionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descript_ion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="toItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BaseItem" inverseName="toParent" inverseEntity="BaseItem" syncable="YES"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" parentEntity="Account" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="function" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Opportunity" representedClassName="Opportunity" parentEntity="BaseItem" syncable="YES">
+        <attribute name="closeDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currPhaseText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expRevenue" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="propability" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-135" positionY="440" width="128" height="163"/>
+        <element name="Appointment" positionX="198" positionY="443" width="128" height="178"/>
+        <element name="BaseItem" positionX="36" positionY="293" width="128" height="165"/>
+        <element name="Collection" positionX="396" positionY="287" width="128" height="148"/>
+        <element name="Contact" positionX="-135" positionY="671" width="128" height="103"/>
+        <element name="Opportunity" positionX="34" positionY="594" width="128" height="163"/>
+    </elements>
+</model>

@@ -1,0 +1,1019 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		231325A519DAE6A400EB513C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 231325A419DAE6A400EB513C /* main.m */; };
+		231325A819DAE6A400EB513C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 231325A719DAE6A400EB513C /* AppDelegate.m */; };
+		231325AB19DAE6A400EB513C /* SAPCRMOData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 231325A919DAE6A400EB513C /* SAPCRMOData.xcdatamodeld */; };
+		231325B419DAE6A400EB513C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231325B219DAE6A400EB513C /* Main.storyboard */; };
+		231325B619DAE6A500EB513C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 231325B519DAE6A500EB513C /* Images.xcassets */; };
+		231325C519DAE6A500EB513C /* SAPCRMODataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 231325C419DAE6A500EB513C /* SAPCRMODataTests.m */; };
+		231325D019DAFBAA00EB513C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325CF19DAFBAA00EB513C /* Foundation.framework */; };
+		231325D219DAFBAF00EB513C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325D119DAFBAF00EB513C /* CFNetwork.framework */; };
+		231325D419DAFBBF00EB513C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325D319DAFBBF00EB513C /* MobileCoreServices.framework */; };
+		231325D619DAFBCA00EB513C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325D519DAFBCA00EB513C /* SystemConfiguration.framework */; };
+		231325D819DAFBD300EB513C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325D719DAFBD300EB513C /* MessageUI.framework */; };
+		231325DA19DAFC0200EB513C /* libAfariaSLL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325D919DAFC0200EB513C /* libAfariaSLL.a */; };
+		231325DC19DAFC1400EB513C /* libMAFLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325DB19DAFC1400EB513C /* libMAFLogger.a */; };
+		231325DE19DAFC2400EB513C /* libMAFLogonManagerNG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325DD19DAFC2400EB513C /* libMAFLogonManagerNG.a */; };
+		231325E219DAFC6900EB513C /* libMAFUIHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325E119DAFC6900EB513C /* libMAFUIHelper.a */; };
+		231325E419DAFC7500EB513C /* libMAFLogonUING.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325E319DAFC7500EB513C /* libMAFLogonUING.a */; };
+		231325E619DAFC7A00EB513C /* libMAFUIComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325E519DAFC7A00EB513C /* libMAFUIComponents.a */; };
+		231325E819DAFC8100EB513C /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325E719DAFC8100EB513C /* libsqlcipher.a */; };
+		231325EA19DAFC8700EB513C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325E919DAFC8700EB513C /* libcrypto.a */; };
+		231325EC19DAFC8B00EB513C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325EB19DAFC8B00EB513C /* libssl.a */; };
+		231325EE19DAFC9200EB513C /* libPerformanceLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325ED19DAFC9200EB513C /* libPerformanceLib.a */; };
+		231325F019DAFC9900EB513C /* libClientHubSLL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325EF19DAFC9900EB513C /* libClientHubSLL.a */; };
+		231325F419DAFCA800EB513C /* libConnectivity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325F319DAFCA800EB513C /* libConnectivity.a */; };
+		231325F619DAFCAC00EB513C /* libCoreServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325F519DAFCAC00EB513C /* libCoreServices.a */; };
+		231325F819DAFCB000EB513C /* libE2ETrace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325F719DAFCB000EB513C /* libE2ETrace.a */; };
+		231325FA19DAFCB300EB513C /* libE2ETrace2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325F919DAFCB300EB513C /* libE2ETrace2.a */; };
+		231325FC19DAFCB800EB513C /* libHttpConvAuthFlows.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325FB19DAFCB800EB513C /* libHttpConvAuthFlows.a */; };
+		231325FE19DAFCBC00EB513C /* libHttpConversation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325FD19DAFCBC00EB513C /* libHttpConversation.a */; };
+		2313260019DAFCC000EB513C /* libLogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 231325FF19DAFCC000EB513C /* libLogger.a */; };
+		2313260219DAFCC600EB513C /* libMobilePlace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313260119DAFCC600EB513C /* libMobilePlace.a */; };
+		2313260419DAFCCB00EB513C /* libODataAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313260319DAFCCB00EB513C /* libODataAPI.a */; };
+		2313260619DAFCCF00EB513C /* libODataOffline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313260519DAFCCF00EB513C /* libODataOffline.a */; };
+		2313260819DAFCD300EB513C /* libODataOnline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313260719DAFCD300EB513C /* libODataOnline.a */; };
+		2313260A19DAFCDA00EB513C /* libRequest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313260919DAFCDA00EB513C /* libRequest.a */; };
+		2313260E19DAFCE700EB513C /* libUsage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313260D19DAFCE700EB513C /* libUsage.a */; };
+		2313261019DAFCEB00EB513C /* libXScriptParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313260F19DAFCEB00EB513C /* libXScriptParser.a */; };
+		2313261219DAFCF100EB513C /* libDatavault.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313261119DAFCF100EB513C /* libDatavault.a */; };
+		2313261419DAFD1500EB513C /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313261319DAFD1500EB513C /* libstdc++.dylib */; };
+		2313261619DAFD2100EB513C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313261519DAFD2100EB513C /* libz.dylib */; };
+		2313261819DAFD2900EB513C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313261719DAFD2900EB513C /* libsqlite3.dylib */; };
+		2313261A19DB09C200EB513C /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313261919DB09C200EB513C /* libstdc++.6.dylib */; };
+		2365ACD419DD9BD400214F76 /* MAFUIComponents.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2365ACD319DD9BD400214F76 /* MAFUIComponents.bundle */; };
+		23BCAEBB19E2C4C20010FDC3 /* libSupportability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BCAEBA19E2C4C20010FDC3 /* libSupportability.a */; };
+		23BCAEBD19E2C4D40010FDC3 /* libClientLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BCAEBC19E2C4D40010FDC3 /* libClientLog.a */; };
+		262558E51A0A5FD70071A1E8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262558E41A0A5FD70071A1E8 /* SettingsViewController.m */; };
+		262558F41A0A64F20071A1E8 /* LogEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262558F31A0A64F20071A1E8 /* LogEntryTableViewCell.m */; };
+		263F61A919E418BB0023F12E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263F61A819E418BB0023F12E /* Security.framework */; };
+		26AC0EAF1A039BC500035660 /* APPCIDRequestFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC0EAE1A039BC500035660 /* APPCIDRequestFilter.m */; };
+		26AC6ADE1A0B78C6002938B3 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC6ADD1A0B78C6002938B3 /* Settings.m */; };
+		26BC7F8B1A0CD5C70009399A /* LogViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BC7F8A1A0CD5C70009399A /* LogViewerViewController.m */; };
+		26BD236E19FFA22E0038EC25 /* SAPStoreOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BD236D19FFA22E0038EC25 /* SAPStoreOperation.m */; };
+		377626061B53F01100889667 /* EditAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 377626051B53F01100889667 /* EditAccountViewController.m */; };
+		37AFB14A1C49087000D9BBF7 /* MAFLogonManagerNG.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37AFB1441C49087000D9BBF7 /* MAFLogonManagerNG.bundle */; };
+		37AFB14B1C49087000D9BBF7 /* HttpConvAuthFlows.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37AFB1451C49087000D9BBF7 /* HttpConvAuthFlows.bundle */; };
+		37AFB14C1C49087000D9BBF7 /* Logger.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37AFB1461C49087000D9BBF7 /* Logger.bundle */; };
+		37AFB14D1C49087000D9BBF7 /* MobilePlace.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37AFB1471C49087000D9BBF7 /* MobilePlace.bundle */; };
+		37AFB14E1C49087000D9BBF7 /* MAFLogonUING.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37AFB1481C49087000D9BBF7 /* MAFLogonUING.bundle */; };
+		37AFB14F1C49087000D9BBF7 /* MAFUIComponents.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37AFB1491C49087000D9BBF7 /* MAFUIComponents.bundle */; };
+		37B2BADB1B68C95F0053CA87 /* EditAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BADA1B68C95F0053CA87 /* EditAppointmentViewController.m */; };
+		37B2BADE1B68F27F0053CA87 /* EditOpportunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B2BADD1B68F27F0053CA87 /* EditOpportunityViewController.m */; };
+		37B84A391B6F9FBA0087DDAA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37B84A381B6F9FBA0087DDAA /* Settings.bundle */; };
+		37C636461A5FE469000E1B6E /* ContactCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C636451A5FE469000E1B6E /* ContactCollectionViewCell.m */; };
+		37CEF9401B67BB0100DD3A83 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CEF93F1B67BB0100DD3A83 /* UIColor+Extension.m */; };
+		37D0081D1B5E7006002AE7F1 /* EditContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D0081C1B5E7006002AE7F1 /* EditContactViewController.m */; };
+		37D824661A666A0F00BFA150 /* AppointmentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D824651A666A0F00BFA150 /* AppointmentCollectionViewCell.m */; };
+		37D824691A666F6400BFA150 /* OpportunityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D824681A666F6400BFA150 /* OpportunityCollectionViewCell.m */; };
+		37E4788F1B55080D00EEABBF /* SAPCRMCUD_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E4788E1B55080D00EEABBF /* SAPCRMCUD_Tests.m */; };
+		37E478901B550AA400EEABBF /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313261919DB09C200EB513C /* libstdc++.6.dylib */; };
+		37E478911B550AAB00EEABBF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2313261719DAFD2900EB513C /* libsqlite3.dylib */; };
+		37E4789B1B550B4600EEABBF /* libCoreServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E478921B550B4500EEABBF /* libCoreServices.a */; };
+		37E4789C1B550B4600EEABBF /* libMobilePlace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E478931B550B4500EEABBF /* libMobilePlace.a */; };
+		37E4789D1B550B4600EEABBF /* libClientHubSLL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E478941B550B4500EEABBF /* libClientHubSLL.a */; };
+		37E4789E1B550B4600EEABBF /* libDatavault.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E478951B550B4600EEABBF /* libDatavault.a */; };
+		37E4789F1B550B4600EEABBF /* libHttpConversation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E478961B550B4600EEABBF /* libHttpConversation.a */; };
+		37E478A01B550B4600EEABBF /* libODataOffline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E478971B550B4600EEABBF /* libODataOffline.a */; };
+		37E478A11B550B4600EEABBF /* libODataAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E478981B550B4600EEABBF /* libODataAPI.a */; };
+		37E478A21B550B4600EEABBF /* libXScriptParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E478991B550B4600EEABBF /* libXScriptParser.a */; };
+		37E478A31B550B4600EEABBF /* libODataOnline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E4789A1B550B4600EEABBF /* libODataOnline.a */; };
+		96A1965819E536D100478152 /* SAPStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1965719E536D100478152 /* SAPStoreManager.m */; };
+		96A20FD619E3CD1F002DC017 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A20FD519E3CD1F002DC017 /* LoginViewController.m */; };
+		96A31AF919E6834C0066F731 /* BadgeCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A31AF819E6834C0066F731 /* BadgeCellTableViewCell.m */; };
+		96A31AFC19E6855E0066F731 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A31AFB19E6855E0066F731 /* MainViewController.m */; };
+		96A31B0019E689BE0066F731 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A31AFF19E689BE0066F731 /* Constants.m */; };
+		96A4419119EFAC13003C25A6 /* ContactConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A4419019EFAC13003C25A6 /* ContactConverter.m */; };
+		96A4419419EFB145003C25A6 /* ConverterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A4419319EFB145003C25A6 /* ConverterUtils.m */; };
+		96A4419819EFBCB4003C25A6 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A4419719EFBCB4003C25A6 /* NSDate+Extension.m */; };
+		96A4419B19EFBE67003C25A6 /* AccountConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A4419A19EFBE67003C25A6 /* AccountConverter.m */; };
+		96A4419E19EFC004003C25A6 /* AppointmentConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A4419D19EFC004003C25A6 /* AppointmentConverter.m */; };
+		96A441A119EFC243003C25A6 /* OpportunityConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A441A019EFC243003C25A6 /* OpportunityConverter.m */; };
+		96A441A419EFC4A8003C25A6 /* ConverterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A441A319EFC4A8003C25A6 /* ConverterFactory.m */; };
+		96A597A219EC49DC007D2592 /* DemoOnlineStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A597A119EC49DC007D2592 /* DemoOnlineStore.m */; };
+		96A7EE5719ED156900697704 /* DemoRequestExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A7EE5619ED156900697704 /* DemoRequestExecution.m */; };
+		96AC2AAD19EBF58D00808769 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC2AAC19EBF58D00808769 /* DataManager.m */; };
+		96AC2AC219EC016600808769 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC2AB719EC016600808769 /* Account.m */; };
+		96AC2AC319EC016600808769 /* Appointment.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC2AB919EC016600808769 /* Appointment.m */; };
+		96AC2AC419EC016600808769 /* BaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC2ABB19EC016600808769 /* BaseItem.m */; };
+		96AC2AC519EC016600808769 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC2ABD19EC016600808769 /* Collection.m */; };
+		96AC2AC619EC016600808769 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC2ABF19EC016600808769 /* Contact.m */; };
+		96AC2AC719EC016600808769 /* Opportunity.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AC2AC119EC016600808769 /* Opportunity.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		231325BF19DAE6A500EB513C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2313259719DAE6A400EB513C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2313259E19DAE6A400EB513C;
+			remoteInfo = SAPCRMOData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2313259F19DAE6A400EB513C /* SAPCRMOData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAPCRMOData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		231325A319DAE6A400EB513C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		231325A419DAE6A400EB513C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		231325A619DAE6A400EB513C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		231325A719DAE6A400EB513C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		231325AA19DAE6A400EB513C /* SAPCRMOData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SAPCRMOData.xcdatamodel; sourceTree = "<group>"; };
+		231325B319DAE6A400EB513C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		231325B519DAE6A500EB513C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		231325BE19DAE6A500EB513C /* SAPCRMODataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAPCRMODataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		231325C319DAE6A500EB513C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		231325C419DAE6A500EB513C /* SAPCRMODataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAPCRMODataTests.m; sourceTree = "<group>"; };
+		231325CF19DAFBAA00EB513C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		231325D119DAFBAF00EB513C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		231325D319DAFBBF00EB513C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		231325D519DAFBCA00EB513C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		231325D719DAFBD300EB513C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		231325D919DAFC0200EB513C /* libAfariaSLL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAfariaSLL.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.afaria.client.ios/AfariaSLL/libAfariaSLL.a"; sourceTree = "<group>"; };
+		231325DB19DAFC1400EB513C /* libMAFLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMAFLogger.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.mobile.maf.tools.ios/MAFLogger/libMAFLogger.a"; sourceTree = "<group>"; };
+		231325DD19DAFC2400EB513C /* libMAFLogonManagerNG.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMAFLogonManagerNG.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.mobile.maf.tools.ios/MAFLogonManagerNG/libMAFLogonManagerNG.a"; sourceTree = "<group>"; };
+		231325E119DAFC6900EB513C /* libMAFUIHelper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMAFUIHelper.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.mobile.maf.tools.ios/MAFUIHelper/libMAFUIHelper.a"; sourceTree = "<group>"; };
+		231325E319DAFC7500EB513C /* libMAFLogonUING.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMAFLogonUING.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.mobile.maf.ui.ios/MAFLogonUING/libMAFLogonUING.a"; sourceTree = "<group>"; };
+		231325E519DAFC7A00EB513C /* libMAFUIComponents.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMAFUIComponents.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.mobile.maf.ui.ios/MAFUIComponents/libMAFUIComponents.a"; sourceTree = "<group>"; };
+		231325E719DAFC8100EB513C /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsqlcipher.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.net.zetetic.sqlcipher/sqlcipher/libsqlcipher.a"; sourceTree = "<group>"; };
+		231325E919DAFC8700EB513C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.org.openssl/crypto/libcrypto.a"; sourceTree = "<group>"; };
+		231325EB19DAFC8B00EB513C /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.org.openssl/ssl/libssl.a"; sourceTree = "<group>"; };
+		231325ED19DAFC9200EB513C /* libPerformanceLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPerformanceLib.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.performance.ios/PerformanceLib/libPerformanceLib.a"; sourceTree = "<group>"; };
+		231325EF19DAFC9900EB513C /* libClientHubSLL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libClientHubSLL.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ClientHubSLL/libClientHubSLL.a"; sourceTree = "<group>"; };
+		231325F119DAFCA100EB513C /* libClientLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libClientLog.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ClientLog/libClientLog.a"; sourceTree = "<group>"; };
+		231325F319DAFCA800EB513C /* libConnectivity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libConnectivity.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/Connectivity/libConnectivity.a"; sourceTree = "<group>"; };
+		231325F519DAFCAC00EB513C /* libCoreServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCoreServices.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/CoreServices/libCoreServices.a"; sourceTree = "<group>"; };
+		231325F719DAFCB000EB513C /* libE2ETrace.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libE2ETrace.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/E2ETrace/libE2ETrace.a"; sourceTree = "<group>"; };
+		231325F919DAFCB300EB513C /* libE2ETrace2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libE2ETrace2.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/E2ETrace2/libE2ETrace2.a"; sourceTree = "<group>"; };
+		231325FB19DAFCB800EB513C /* libHttpConvAuthFlows.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHttpConvAuthFlows.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/HttpConvAuthFlows/libHttpConvAuthFlows.a"; sourceTree = "<group>"; };
+		231325FD19DAFCBC00EB513C /* libHttpConversation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHttpConversation.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/HttpConversation/libHttpConversation.a"; sourceTree = "<group>"; };
+		231325FF19DAFCC000EB513C /* libLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLogger.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/Logger/libLogger.a"; sourceTree = "<group>"; };
+		2313260119DAFCC600EB513C /* libMobilePlace.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobilePlace.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/MobilePlace/libMobilePlace.a"; sourceTree = "<group>"; };
+		2313260319DAFCCB00EB513C /* libODataAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libODataAPI.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ODataAPI/libODataAPI.a"; sourceTree = "<group>"; };
+		2313260519DAFCCF00EB513C /* libODataOffline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libODataOffline.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ODataOffline/libODataOffline.a"; sourceTree = "<group>"; };
+		2313260719DAFCD300EB513C /* libODataOnline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libODataOnline.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ODataOnline/libODataOnline.a"; sourceTree = "<group>"; };
+		2313260919DAFCDA00EB513C /* libRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRequest.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/Request/libRequest.a"; sourceTree = "<group>"; };
+		2313260B19DAFCE100EB513C /* libSupportability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSupportability.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/Supportability/libSupportability.a"; sourceTree = "<group>"; };
+		2313260D19DAFCE700EB513C /* libUsage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUsage.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/Usage/libUsage.a"; sourceTree = "<group>"; };
+		2313260F19DAFCEB00EB513C /* libXScriptParser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXScriptParser.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/XScriptParser/libXScriptParser.a"; sourceTree = "<group>"; };
+		2313261119DAFCF100EB513C /* libDatavault.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDatavault.a; path = "../../../../target/libs/Debug-iphonesimulator/com.sap.sup.odp.client.ios/Datavault/libDatavault.a"; sourceTree = "<group>"; };
+		2313261319DAFD1500EB513C /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		2313261519DAFD2100EB513C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2313261719DAFD2900EB513C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2313261919DB09C200EB513C /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		2365ACCE19DD8A9600214F76 /* SAPCRMOData-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SAPCRMOData-Prefix.pch"; sourceTree = "<group>"; };
+		2365ACD319DD9BD400214F76 /* MAFUIComponents.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MAFUIComponents.bundle; path = SAPCRMOData/MAFUIComponents.bundle; sourceTree = "<group>"; };
+		23BCAEBA19E2C4C20010FDC3 /* libSupportability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSupportability.a; path = "../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/Supportability/libSupportability.a"; sourceTree = "<group>"; };
+		23BCAEBC19E2C4D40010FDC3 /* libClientLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libClientLog.a; path = "../../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ClientLog/libClientLog.a"; sourceTree = "<group>"; };
+		262558E31A0A5FD70071A1E8 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		262558E41A0A5FD70071A1E8 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		262558F21A0A64F20071A1E8 /* LogEntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogEntryTableViewCell.h; path = Cells/LogEntryTableViewCell.h; sourceTree = "<group>"; };
+		262558F31A0A64F20071A1E8 /* LogEntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogEntryTableViewCell.m; path = Cells/LogEntryTableViewCell.m; sourceTree = "<group>"; };
+		263F61A819E418BB0023F12E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		26AC0EAD1A039BC500035660 /* APPCIDRequestFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APPCIDRequestFilter.h; path = OnlineStoreFacade/APPCIDRequestFilter.h; sourceTree = "<group>"; };
+		26AC0EAE1A039BC500035660 /* APPCIDRequestFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APPCIDRequestFilter.m; path = OnlineStoreFacade/APPCIDRequestFilter.m; sourceTree = "<group>"; };
+		26AC6ADC1A0B78C6002938B3 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		26AC6ADD1A0B78C6002938B3 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		26B80CB71A1B4ABC00A0881C /* SAPCRMOData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SAPCRMOData.entitlements; sourceTree = "<group>"; };
+		26B8607E1A19FC86000F8586 /* MAFLogonManagerNG.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MAFLogonManagerNG.bundle; path = ../../target/bundles/com.sap.mobile.maf.tools.ios/MAFLogonManagerNG/MAFLogonManagerNG.bundle; sourceTree = "<group>"; };
+		26B8607F1A19FC86000F8586 /* MAFLogonUING.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MAFLogonUING.bundle; path = ../../target/bundles/com.sap.mobile.maf.ui.ios/MAFLogonUING/MAFLogonUING.bundle; sourceTree = "<group>"; };
+		26B860821A1A00D0000F8586 /* MobilePlace.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MobilePlace.bundle; path = ../../target/bundles/com.sap.smp.client.ios/MobilePlace/MobilePlace.bundle; sourceTree = "<group>"; };
+		26BC7F891A0CD5C70009399A /* LogViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewerViewController.h; sourceTree = "<group>"; };
+		26BC7F8A1A0CD5C70009399A /* LogViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewerViewController.m; sourceTree = "<group>"; };
+		26BD236C19FFA22E0038EC25 /* SAPStoreOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAPStoreOperation.h; path = OnlineStoreFacade/SAPStoreOperation.h; sourceTree = "<group>"; };
+		26BD236D19FFA22E0038EC25 /* SAPStoreOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAPStoreOperation.m; path = OnlineStoreFacade/SAPStoreOperation.m; sourceTree = "<group>"; };
+		377626041B53F01100889667 /* EditAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAccountViewController.h; sourceTree = "<group>"; };
+		377626051B53F01100889667 /* EditAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAccountViewController.m; sourceTree = "<group>"; };
+		37AFB1441C49087000D9BBF7 /* MAFLogonManagerNG.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MAFLogonManagerNG.bundle; path = target/bundles/com.sap.mobile.maf.tools.ios/MAFLogonManagerNG/MAFLogonManagerNG.bundle; sourceTree = "<group>"; };
+		37AFB1451C49087000D9BBF7 /* HttpConvAuthFlows.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HttpConvAuthFlows.bundle; path = target/bundles/com.sap.smp.client.ios/HttpConvAuthFlows/HttpConvAuthFlows.bundle; sourceTree = "<group>"; };
+		37AFB1461C49087000D9BBF7 /* Logger.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Logger.bundle; path = target/bundles/com.sap.smp.client.ios/Logger/Logger.bundle; sourceTree = "<group>"; };
+		37AFB1471C49087000D9BBF7 /* MobilePlace.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MobilePlace.bundle; path = target/bundles/com.sap.smp.client.ios/MobilePlace/MobilePlace.bundle; sourceTree = "<group>"; };
+		37AFB1481C49087000D9BBF7 /* MAFLogonUING.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MAFLogonUING.bundle; path = target/bundles/com.sap.mobile.maf.ui.ios/MAFLogonUING/MAFLogonUING.bundle; sourceTree = "<group>"; };
+		37AFB1491C49087000D9BBF7 /* MAFUIComponents.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MAFUIComponents.bundle; path = target/bundles/com.sap.mobile.maf.ui.ios/MAFUIComponents/MAFUIComponents.bundle; sourceTree = "<group>"; };
+		37B2BAD91B68C95F0053CA87 /* EditAppointmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAppointmentViewController.h; sourceTree = "<group>"; };
+		37B2BADA1B68C95F0053CA87 /* EditAppointmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAppointmentViewController.m; sourceTree = "<group>"; };
+		37B2BADC1B68F27F0053CA87 /* EditOpportunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditOpportunityViewController.h; sourceTree = "<group>"; };
+		37B2BADD1B68F27F0053CA87 /* EditOpportunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditOpportunityViewController.m; sourceTree = "<group>"; };
+		37B84A381B6F9FBA0087DDAA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Resources/Settings.bundle; sourceTree = "<group>"; };
+		37C636441A5FE469000E1B6E /* ContactCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactCollectionViewCell.h; path = Cells/ContactCollectionViewCell.h; sourceTree = "<group>"; };
+		37C636451A5FE469000E1B6E /* ContactCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactCollectionViewCell.m; path = Cells/ContactCollectionViewCell.m; sourceTree = "<group>"; };
+		37CEF93E1B67BB0100DD3A83 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extension.h"; path = "Utility/UIColor+Extension.h"; sourceTree = "<group>"; };
+		37CEF93F1B67BB0100DD3A83 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extension.m"; path = "Utility/UIColor+Extension.m"; sourceTree = "<group>"; };
+		37D0081B1B5E7006002AE7F1 /* EditContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditContactViewController.h; sourceTree = "<group>"; };
+		37D0081C1B5E7006002AE7F1 /* EditContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditContactViewController.m; sourceTree = "<group>"; };
+		37D824641A666A0F00BFA150 /* AppointmentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppointmentCollectionViewCell.h; path = Cells/AppointmentCollectionViewCell.h; sourceTree = "<group>"; };
+		37D824651A666A0F00BFA150 /* AppointmentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppointmentCollectionViewCell.m; path = Cells/AppointmentCollectionViewCell.m; sourceTree = "<group>"; };
+		37D824671A666F6400BFA150 /* OpportunityCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpportunityCollectionViewCell.h; path = Cells/OpportunityCollectionViewCell.h; sourceTree = "<group>"; };
+		37D824681A666F6400BFA150 /* OpportunityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpportunityCollectionViewCell.m; path = Cells/OpportunityCollectionViewCell.m; sourceTree = "<group>"; };
+		37E4788E1B55080D00EEABBF /* SAPCRMCUD_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPCRMCUD_Tests.m; sourceTree = "<group>"; };
+		37E478921B550B4500EEABBF /* libCoreServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCoreServices.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/CoreServices/libCoreServices.a"; sourceTree = "<group>"; };
+		37E478931B550B4500EEABBF /* libMobilePlace.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobilePlace.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/MobilePlace/libMobilePlace.a"; sourceTree = "<group>"; };
+		37E478941B550B4500EEABBF /* libClientHubSLL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libClientHubSLL.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ClientHubSLL/libClientHubSLL.a"; sourceTree = "<group>"; };
+		37E478951B550B4600EEABBF /* libDatavault.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDatavault.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/Datavault/libDatavault.a"; sourceTree = "<group>"; };
+		37E478961B550B4600EEABBF /* libHttpConversation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHttpConversation.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/HttpConversation/libHttpConversation.a"; sourceTree = "<group>"; };
+		37E478971B550B4600EEABBF /* libODataOffline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libODataOffline.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ODataOffline/libODataOffline.a"; sourceTree = "<group>"; };
+		37E478981B550B4600EEABBF /* libODataAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libODataAPI.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ODataAPI/libODataAPI.a"; sourceTree = "<group>"; };
+		37E478991B550B4600EEABBF /* libXScriptParser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXScriptParser.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/XScriptParser/libXScriptParser.a"; sourceTree = "<group>"; };
+		37E4789A1B550B4600EEABBF /* libODataOnline.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libODataOnline.a; path = "../../target/libs/Debug-iphonesimulator/com.sap.smp.client.ios/ODataOnline/libODataOnline.a"; sourceTree = "<group>"; };
+		96A1965619E536D100478152 /* SAPStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAPStoreManager.h; path = OnlineStoreFacade/SAPStoreManager.h; sourceTree = "<group>"; };
+		96A1965719E536D100478152 /* SAPStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAPStoreManager.m; path = OnlineStoreFacade/SAPStoreManager.m; sourceTree = "<group>"; };
+		96A20FD419E3CD1F002DC017 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		96A20FD519E3CD1F002DC017 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		96A31AF719E6834C0066F731 /* BadgeCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BadgeCellTableViewCell.h; path = Cells/BadgeCellTableViewCell.h; sourceTree = "<group>"; };
+		96A31AF819E6834C0066F731 /* BadgeCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BadgeCellTableViewCell.m; path = Cells/BadgeCellTableViewCell.m; sourceTree = "<group>"; };
+		96A31AFA19E6855E0066F731 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		96A31AFB19E6855E0066F731 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		96A31AFE19E689BE0066F731 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		96A31AFF19E689BE0066F731 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		96A4418E19EFA949003C25A6 /* CoreDataConverting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataConverting.h; path = Converter/CoreDataConverting.h; sourceTree = "<group>"; };
+		96A4418F19EFAC13003C25A6 /* ContactConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactConverter.h; path = Converter/ContactConverter.h; sourceTree = "<group>"; };
+		96A4419019EFAC13003C25A6 /* ContactConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactConverter.m; path = Converter/ContactConverter.m; sourceTree = "<group>"; };
+		96A4419219EFB145003C25A6 /* ConverterUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConverterUtils.h; path = Converter/ConverterUtils.h; sourceTree = "<group>"; };
+		96A4419319EFB145003C25A6 /* ConverterUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConverterUtils.m; path = Converter/ConverterUtils.m; sourceTree = "<group>"; };
+		96A4419619EFBCB4003C25A6 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Extension.h"; path = "Utility/NSDate+Extension.h"; sourceTree = "<group>"; };
+		96A4419719EFBCB4003C25A6 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Extension.m"; path = "Utility/NSDate+Extension.m"; sourceTree = "<group>"; };
+		96A4419919EFBE67003C25A6 /* AccountConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountConverter.h; path = Converter/AccountConverter.h; sourceTree = "<group>"; };
+		96A4419A19EFBE67003C25A6 /* AccountConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountConverter.m; path = Converter/AccountConverter.m; sourceTree = "<group>"; };
+		96A4419C19EFC004003C25A6 /* AppointmentConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppointmentConverter.h; path = Converter/AppointmentConverter.h; sourceTree = "<group>"; };
+		96A4419D19EFC004003C25A6 /* AppointmentConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppointmentConverter.m; path = Converter/AppointmentConverter.m; sourceTree = "<group>"; };
+		96A4419F19EFC243003C25A6 /* OpportunityConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpportunityConverter.h; path = Converter/OpportunityConverter.h; sourceTree = "<group>"; };
+		96A441A019EFC243003C25A6 /* OpportunityConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpportunityConverter.m; path = Converter/OpportunityConverter.m; sourceTree = "<group>"; };
+		96A441A219EFC4A8003C25A6 /* ConverterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConverterFactory.h; path = Converter/ConverterFactory.h; sourceTree = "<group>"; };
+		96A441A319EFC4A8003C25A6 /* ConverterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConverterFactory.m; path = Converter/ConverterFactory.m; sourceTree = "<group>"; };
+		96A597A019EC49DC007D2592 /* DemoOnlineStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoOnlineStore.h; path = OnlineStoreFacade/DemoOnlineStore.h; sourceTree = "<group>"; };
+		96A597A119EC49DC007D2592 /* DemoOnlineStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoOnlineStore.m; path = OnlineStoreFacade/DemoOnlineStore.m; sourceTree = "<group>"; };
+		96A7EE5519ED156900697704 /* DemoRequestExecution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoRequestExecution.h; path = OnlineStoreFacade/DemoRequestExecution.h; sourceTree = "<group>"; };
+		96A7EE5619ED156900697704 /* DemoRequestExecution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoRequestExecution.m; path = OnlineStoreFacade/DemoRequestExecution.m; sourceTree = "<group>"; };
+		96AC2AAB19EBF58D00808769 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = Model/DataManager.h; sourceTree = "<group>"; };
+		96AC2AAC19EBF58D00808769 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Model/DataManager.m; sourceTree = "<group>"; };
+		96AC2AAE19EBF5E500808769 /* DBObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBObjects.h; path = Model/DBObjects.h; sourceTree = "<group>"; };
+		96AC2AB619EC016600808769 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Account.h; path = Model/Account.h; sourceTree = "<group>"; };
+		96AC2AB719EC016600808769 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Account.m; path = Model/Account.m; sourceTree = "<group>"; };
+		96AC2AB819EC016600808769 /* Appointment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Appointment.h; path = Model/Appointment.h; sourceTree = "<group>"; };
+		96AC2AB919EC016600808769 /* Appointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Appointment.m; path = Model/Appointment.m; sourceTree = "<group>"; };
+		96AC2ABA19EC016600808769 /* BaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseItem.h; path = Model/BaseItem.h; sourceTree = "<group>"; };
+		96AC2ABB19EC016600808769 /* BaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseItem.m; path = Model/BaseItem.m; sourceTree = "<group>"; };
+		96AC2ABC19EC016600808769 /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Collection.h; path = Model/Collection.h; sourceTree = "<group>"; };
+		96AC2ABD19EC016600808769 /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Collection.m; path = Model/Collection.m; sourceTree = "<group>"; };
+		96AC2ABE19EC016600808769 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = Model/Contact.h; sourceTree = "<group>"; };
+		96AC2ABF19EC016600808769 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = Model/Contact.m; sourceTree = "<group>"; };
+		96AC2AC019EC016600808769 /* Opportunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Opportunity.h; path = Model/Opportunity.h; sourceTree = "<group>"; };
+		96AC2AC119EC016600808769 /* Opportunity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Opportunity.m; path = Model/Opportunity.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2313259C19DAE6A400EB513C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				263F61A919E418BB0023F12E /* Security.framework in Frameworks */,
+				23BCAEBD19E2C4D40010FDC3 /* libClientLog.a in Frameworks */,
+				23BCAEBB19E2C4C20010FDC3 /* libSupportability.a in Frameworks */,
+				2313261A19DB09C200EB513C /* libstdc++.6.dylib in Frameworks */,
+				2313261819DAFD2900EB513C /* libsqlite3.dylib in Frameworks */,
+				2313261619DAFD2100EB513C /* libz.dylib in Frameworks */,
+				2313261419DAFD1500EB513C /* libstdc++.dylib in Frameworks */,
+				2313261019DAFCEB00EB513C /* libXScriptParser.a in Frameworks */,
+				2313260E19DAFCE700EB513C /* libUsage.a in Frameworks */,
+				2313260A19DAFCDA00EB513C /* libRequest.a in Frameworks */,
+				2313261219DAFCF100EB513C /* libDatavault.a in Frameworks */,
+				2313260619DAFCCF00EB513C /* libODataOffline.a in Frameworks */,
+				2313260819DAFCD300EB513C /* libODataOnline.a in Frameworks */,
+				2313260419DAFCCB00EB513C /* libODataAPI.a in Frameworks */,
+				2313260219DAFCC600EB513C /* libMobilePlace.a in Frameworks */,
+				2313260019DAFCC000EB513C /* libLogger.a in Frameworks */,
+				231325FE19DAFCBC00EB513C /* libHttpConversation.a in Frameworks */,
+				231325FC19DAFCB800EB513C /* libHttpConvAuthFlows.a in Frameworks */,
+				231325FA19DAFCB300EB513C /* libE2ETrace2.a in Frameworks */,
+				231325F819DAFCB000EB513C /* libE2ETrace.a in Frameworks */,
+				231325F619DAFCAC00EB513C /* libCoreServices.a in Frameworks */,
+				231325F419DAFCA800EB513C /* libConnectivity.a in Frameworks */,
+				231325F019DAFC9900EB513C /* libClientHubSLL.a in Frameworks */,
+				231325EE19DAFC9200EB513C /* libPerformanceLib.a in Frameworks */,
+				231325EC19DAFC8B00EB513C /* libssl.a in Frameworks */,
+				231325EA19DAFC8700EB513C /* libcrypto.a in Frameworks */,
+				231325E819DAFC8100EB513C /* libsqlcipher.a in Frameworks */,
+				231325E619DAFC7A00EB513C /* libMAFUIComponents.a in Frameworks */,
+				231325E419DAFC7500EB513C /* libMAFLogonUING.a in Frameworks */,
+				231325E219DAFC6900EB513C /* libMAFUIHelper.a in Frameworks */,
+				231325DE19DAFC2400EB513C /* libMAFLogonManagerNG.a in Frameworks */,
+				231325DC19DAFC1400EB513C /* libMAFLogger.a in Frameworks */,
+				231325DA19DAFC0200EB513C /* libAfariaSLL.a in Frameworks */,
+				231325D819DAFBD300EB513C /* MessageUI.framework in Frameworks */,
+				231325D619DAFBCA00EB513C /* SystemConfiguration.framework in Frameworks */,
+				231325D419DAFBBF00EB513C /* MobileCoreServices.framework in Frameworks */,
+				231325D219DAFBAF00EB513C /* CFNetwork.framework in Frameworks */,
+				231325D019DAFBAA00EB513C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		231325BB19DAE6A500EB513C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E4789B1B550B4600EEABBF /* libCoreServices.a in Frameworks */,
+				37E4789C1B550B4600EEABBF /* libMobilePlace.a in Frameworks */,
+				37E4789D1B550B4600EEABBF /* libClientHubSLL.a in Frameworks */,
+				37E4789E1B550B4600EEABBF /* libDatavault.a in Frameworks */,
+				37E4789F1B550B4600EEABBF /* libHttpConversation.a in Frameworks */,
+				37E478A01B550B4600EEABBF /* libODataOffline.a in Frameworks */,
+				37E478A11B550B4600EEABBF /* libODataAPI.a in Frameworks */,
+				37E478A21B550B4600EEABBF /* libXScriptParser.a in Frameworks */,
+				37E478A31B550B4600EEABBF /* libODataOnline.a in Frameworks */,
+				37E478911B550AAB00EEABBF /* libsqlite3.dylib in Frameworks */,
+				37E478901B550AA400EEABBF /* libstdc++.6.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2313259619DAE6A400EB513C = {
+			isa = PBXGroup;
+			children = (
+				37AFB1441C49087000D9BBF7 /* MAFLogonManagerNG.bundle */,
+				37AFB1451C49087000D9BBF7 /* HttpConvAuthFlows.bundle */,
+				37AFB1461C49087000D9BBF7 /* Logger.bundle */,
+				37AFB1471C49087000D9BBF7 /* MobilePlace.bundle */,
+				37AFB1481C49087000D9BBF7 /* MAFLogonUING.bundle */,
+				37AFB1491C49087000D9BBF7 /* MAFUIComponents.bundle */,
+				37E478921B550B4500EEABBF /* libCoreServices.a */,
+				37E478931B550B4500EEABBF /* libMobilePlace.a */,
+				37E478941B550B4500EEABBF /* libClientHubSLL.a */,
+				37E478951B550B4600EEABBF /* libDatavault.a */,
+				37E478961B550B4600EEABBF /* libHttpConversation.a */,
+				37E478971B550B4600EEABBF /* libODataOffline.a */,
+				37E478981B550B4600EEABBF /* libODataAPI.a */,
+				37E478991B550B4600EEABBF /* libXScriptParser.a */,
+				37E4789A1B550B4600EEABBF /* libODataOnline.a */,
+				26B860821A1A00D0000F8586 /* MobilePlace.bundle */,
+				26B8607E1A19FC86000F8586 /* MAFLogonManagerNG.bundle */,
+				26B8607F1A19FC86000F8586 /* MAFLogonUING.bundle */,
+				2365ACD319DD9BD400214F76 /* MAFUIComponents.bundle */,
+				231325A119DAE6A400EB513C /* SAPCRMOData */,
+				231325C119DAE6A500EB513C /* SAPCRMODataTests */,
+				231325A019DAE6A400EB513C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		231325A019DAE6A400EB513C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2313259F19DAE6A400EB513C /* SAPCRMOData.app */,
+				231325BE19DAE6A500EB513C /* SAPCRMODataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		231325A119DAE6A400EB513C /* SAPCRMOData */ = {
+			isa = PBXGroup;
+			children = (
+				26B80CB71A1B4ABC00A0881C /* SAPCRMOData.entitlements */,
+				96A4419519EFBC8F003C25A6 /* Utility */,
+				96A4418D19EFA8E3003C25A6 /* Converter */,
+				96AC2A9E19EBF10400808769 /* Model */,
+				96A31AFD19E689BE0066F731 /* Constants */,
+				96A31AF619E683170066F731 /* Cells */,
+				96A1965519E5369300478152 /* StoreManager */,
+				26AC6ADB1A0B78C6002938B3 /* Settings */,
+				231325A619DAE6A400EB513C /* AppDelegate.h */,
+				231325A719DAE6A400EB513C /* AppDelegate.m */,
+				96A20FD419E3CD1F002DC017 /* LoginViewController.h */,
+				96A20FD519E3CD1F002DC017 /* LoginViewController.m */,
+				96A31AFA19E6855E0066F731 /* MainViewController.h */,
+				96A31AFB19E6855E0066F731 /* MainViewController.m */,
+				262558E31A0A5FD70071A1E8 /* SettingsViewController.h */,
+				262558E41A0A5FD70071A1E8 /* SettingsViewController.m */,
+				26BC7F891A0CD5C70009399A /* LogViewerViewController.h */,
+				26BC7F8A1A0CD5C70009399A /* LogViewerViewController.m */,
+				231325B219DAE6A400EB513C /* Main.storyboard */,
+				231325B519DAE6A500EB513C /* Images.xcassets */,
+				231325CE19DAE70B00EB513C /* Frameworks */,
+				231325A219DAE6A400EB513C /* Supporting Files */,
+				377626041B53F01100889667 /* EditAccountViewController.h */,
+				377626051B53F01100889667 /* EditAccountViewController.m */,
+				37D0081B1B5E7006002AE7F1 /* EditContactViewController.h */,
+				37D0081C1B5E7006002AE7F1 /* EditContactViewController.m */,
+				37B2BAD91B68C95F0053CA87 /* EditAppointmentViewController.h */,
+				37B2BADA1B68C95F0053CA87 /* EditAppointmentViewController.m */,
+				37B2BADC1B68F27F0053CA87 /* EditOpportunityViewController.h */,
+				37B2BADD1B68F27F0053CA87 /* EditOpportunityViewController.m */,
+			);
+			path = SAPCRMOData;
+			sourceTree = "<group>";
+		};
+		231325A219DAE6A400EB513C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				231325A319DAE6A400EB513C /* Info.plist */,
+				231325A419DAE6A400EB513C /* main.m */,
+				2365ACCE19DD8A9600214F76 /* SAPCRMOData-Prefix.pch */,
+				37B84A381B6F9FBA0087DDAA /* Settings.bundle */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		231325C119DAE6A500EB513C /* SAPCRMODataTests */ = {
+			isa = PBXGroup;
+			children = (
+				231325C419DAE6A500EB513C /* SAPCRMODataTests.m */,
+				231325C219DAE6A500EB513C /* Supporting Files */,
+				37E4788E1B55080D00EEABBF /* SAPCRMCUD_Tests.m */,
+			);
+			path = SAPCRMODataTests;
+			sourceTree = "<group>";
+		};
+		231325C219DAE6A500EB513C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				231325C319DAE6A500EB513C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		231325CE19DAE70B00EB513C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				263F61A819E418BB0023F12E /* Security.framework */,
+				23BCAEBC19E2C4D40010FDC3 /* libClientLog.a */,
+				23BCAEBA19E2C4C20010FDC3 /* libSupportability.a */,
+				2313261119DAFCF100EB513C /* libDatavault.a */,
+				2313260F19DAFCEB00EB513C /* libXScriptParser.a */,
+				2313260D19DAFCE700EB513C /* libUsage.a */,
+				2313260B19DAFCE100EB513C /* libSupportability.a */,
+				2313260919DAFCDA00EB513C /* libRequest.a */,
+				2313260719DAFCD300EB513C /* libODataOnline.a */,
+				2313260519DAFCCF00EB513C /* libODataOffline.a */,
+				2313260319DAFCCB00EB513C /* libODataAPI.a */,
+				2313260119DAFCC600EB513C /* libMobilePlace.a */,
+				231325FF19DAFCC000EB513C /* libLogger.a */,
+				231325FD19DAFCBC00EB513C /* libHttpConversation.a */,
+				231325FB19DAFCB800EB513C /* libHttpConvAuthFlows.a */,
+				231325F919DAFCB300EB513C /* libE2ETrace2.a */,
+				231325F719DAFCB000EB513C /* libE2ETrace.a */,
+				231325F519DAFCAC00EB513C /* libCoreServices.a */,
+				231325F319DAFCA800EB513C /* libConnectivity.a */,
+				231325F119DAFCA100EB513C /* libClientLog.a */,
+				231325EF19DAFC9900EB513C /* libClientHubSLL.a */,
+				231325ED19DAFC9200EB513C /* libPerformanceLib.a */,
+				231325EB19DAFC8B00EB513C /* libssl.a */,
+				231325E919DAFC8700EB513C /* libcrypto.a */,
+				231325E719DAFC8100EB513C /* libsqlcipher.a */,
+				231325E519DAFC7A00EB513C /* libMAFUIComponents.a */,
+				231325E319DAFC7500EB513C /* libMAFLogonUING.a */,
+				231325E119DAFC6900EB513C /* libMAFUIHelper.a */,
+				231325DD19DAFC2400EB513C /* libMAFLogonManagerNG.a */,
+				231325DB19DAFC1400EB513C /* libMAFLogger.a */,
+				231325D919DAFC0200EB513C /* libAfariaSLL.a */,
+				2313261719DAFD2900EB513C /* libsqlite3.dylib */,
+				2313261519DAFD2100EB513C /* libz.dylib */,
+				2313261319DAFD1500EB513C /* libstdc++.dylib */,
+				2313261919DB09C200EB513C /* libstdc++.6.dylib */,
+				231325D719DAFBD300EB513C /* MessageUI.framework */,
+				231325D519DAFBCA00EB513C /* SystemConfiguration.framework */,
+				231325D319DAFBBF00EB513C /* MobileCoreServices.framework */,
+				231325D119DAFBAF00EB513C /* CFNetwork.framework */,
+				231325CF19DAFBAA00EB513C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26AC6ADB1A0B78C6002938B3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				26AC6ADC1A0B78C6002938B3 /* Settings.h */,
+				26AC6ADD1A0B78C6002938B3 /* Settings.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		96A1965519E5369300478152 /* StoreManager */ = {
+			isa = PBXGroup;
+			children = (
+				96A1965619E536D100478152 /* SAPStoreManager.h */,
+				96A1965719E536D100478152 /* SAPStoreManager.m */,
+				96A597A019EC49DC007D2592 /* DemoOnlineStore.h */,
+				96A597A119EC49DC007D2592 /* DemoOnlineStore.m */,
+				96A7EE5519ED156900697704 /* DemoRequestExecution.h */,
+				96A7EE5619ED156900697704 /* DemoRequestExecution.m */,
+				26BD236C19FFA22E0038EC25 /* SAPStoreOperation.h */,
+				26BD236D19FFA22E0038EC25 /* SAPStoreOperation.m */,
+				26AC0EAD1A039BC500035660 /* APPCIDRequestFilter.h */,
+				26AC0EAE1A039BC500035660 /* APPCIDRequestFilter.m */,
+			);
+			name = StoreManager;
+			sourceTree = "<group>";
+		};
+		96A31AF619E683170066F731 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				96A31AF719E6834C0066F731 /* BadgeCellTableViewCell.h */,
+				96A31AF819E6834C0066F731 /* BadgeCellTableViewCell.m */,
+				262558F21A0A64F20071A1E8 /* LogEntryTableViewCell.h */,
+				262558F31A0A64F20071A1E8 /* LogEntryTableViewCell.m */,
+				37C636441A5FE469000E1B6E /* ContactCollectionViewCell.h */,
+				37C636451A5FE469000E1B6E /* ContactCollectionViewCell.m */,
+				37D824641A666A0F00BFA150 /* AppointmentCollectionViewCell.h */,
+				37D824651A666A0F00BFA150 /* AppointmentCollectionViewCell.m */,
+				37D824671A666F6400BFA150 /* OpportunityCollectionViewCell.h */,
+				37D824681A666F6400BFA150 /* OpportunityCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		96A31AFD19E689BE0066F731 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				96A31AFE19E689BE0066F731 /* Constants.h */,
+				96A31AFF19E689BE0066F731 /* Constants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		96A4418D19EFA8E3003C25A6 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				96A4418E19EFA949003C25A6 /* CoreDataConverting.h */,
+				96A4418F19EFAC13003C25A6 /* ContactConverter.h */,
+				96A4419019EFAC13003C25A6 /* ContactConverter.m */,
+				96A4419219EFB145003C25A6 /* ConverterUtils.h */,
+				96A4419319EFB145003C25A6 /* ConverterUtils.m */,
+				96A4419919EFBE67003C25A6 /* AccountConverter.h */,
+				96A4419A19EFBE67003C25A6 /* AccountConverter.m */,
+				96A4419C19EFC004003C25A6 /* AppointmentConverter.h */,
+				96A4419D19EFC004003C25A6 /* AppointmentConverter.m */,
+				96A4419F19EFC243003C25A6 /* OpportunityConverter.h */,
+				96A441A019EFC243003C25A6 /* OpportunityConverter.m */,
+				96A441A219EFC4A8003C25A6 /* ConverterFactory.h */,
+				96A441A319EFC4A8003C25A6 /* ConverterFactory.m */,
+			);
+			name = Converter;
+			sourceTree = "<group>";
+		};
+		96A4419519EFBC8F003C25A6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				96A4419619EFBCB4003C25A6 /* NSDate+Extension.h */,
+				96A4419719EFBCB4003C25A6 /* NSDate+Extension.m */,
+				37CEF93E1B67BB0100DD3A83 /* UIColor+Extension.h */,
+				37CEF93F1B67BB0100DD3A83 /* UIColor+Extension.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		96AC2A9E19EBF10400808769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96AC2AB519EBFC3A00808769 /* DBObjects */,
+				96AC2AAB19EBF58D00808769 /* DataManager.h */,
+				96AC2AAC19EBF58D00808769 /* DataManager.m */,
+				96AC2AAE19EBF5E500808769 /* DBObjects.h */,
+				231325A919DAE6A400EB513C /* SAPCRMOData.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		96AC2AB519EBFC3A00808769 /* DBObjects */ = {
+			isa = PBXGroup;
+			children = (
+				96AC2AB619EC016600808769 /* Account.h */,
+				96AC2AB719EC016600808769 /* Account.m */,
+				96AC2AB819EC016600808769 /* Appointment.h */,
+				96AC2AB919EC016600808769 /* Appointment.m */,
+				96AC2ABA19EC016600808769 /* BaseItem.h */,
+				96AC2ABB19EC016600808769 /* BaseItem.m */,
+				96AC2ABC19EC016600808769 /* Collection.h */,
+				96AC2ABD19EC016600808769 /* Collection.m */,
+				96AC2ABE19EC016600808769 /* Contact.h */,
+				96AC2ABF19EC016600808769 /* Contact.m */,
+				96AC2AC019EC016600808769 /* Opportunity.h */,
+				96AC2AC119EC016600808769 /* Opportunity.m */,
+			);
+			name = DBObjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2313259E19DAE6A400EB513C /* SAPCRMOData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 231325C819DAE6A500EB513C /* Build configuration list for PBXNativeTarget "SAPCRMOData" */;
+			buildPhases = (
+				2313259B19DAE6A400EB513C /* Sources */,
+				2313259C19DAE6A400EB513C /* Frameworks */,
+				2313259D19DAE6A400EB513C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAPCRMOData;
+			productName = SAPCRMOData;
+			productReference = 2313259F19DAE6A400EB513C /* SAPCRMOData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		231325BD19DAE6A500EB513C /* SAPCRMODataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 231325CB19DAE6A500EB513C /* Build configuration list for PBXNativeTarget "SAPCRMODataTests" */;
+			buildPhases = (
+				231325BA19DAE6A500EB513C /* Sources */,
+				231325BB19DAE6A500EB513C /* Frameworks */,
+				231325BC19DAE6A500EB513C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				231325C019DAE6A500EB513C /* PBXTargetDependency */,
+			);
+			name = SAPCRMODataTests;
+			productName = SAPCRMODataTests;
+			productReference = 231325BE19DAE6A500EB513C /* SAPCRMODataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2313259719DAE6A400EB513C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "SAP-SE";
+				TargetAttributes = {
+					2313259E19DAE6A400EB513C = {
+						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					231325BD19DAE6A500EB513C = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 2313259E19DAE6A400EB513C;
+					};
+				};
+			};
+			buildConfigurationList = 2313259A19DAE6A400EB513C /* Build configuration list for PBXProject "SAPCRMOData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2313259619DAE6A400EB513C;
+			productRefGroup = 231325A019DAE6A400EB513C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2313259E19DAE6A400EB513C /* SAPCRMOData */,
+				231325BD19DAE6A500EB513C /* SAPCRMODataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2313259D19DAE6A400EB513C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AFB14A1C49087000D9BBF7 /* MAFLogonManagerNG.bundle in Resources */,
+				37AFB14B1C49087000D9BBF7 /* HttpConvAuthFlows.bundle in Resources */,
+				37AFB14C1C49087000D9BBF7 /* Logger.bundle in Resources */,
+				37AFB14D1C49087000D9BBF7 /* MobilePlace.bundle in Resources */,
+				37AFB14E1C49087000D9BBF7 /* MAFLogonUING.bundle in Resources */,
+				37AFB14F1C49087000D9BBF7 /* MAFUIComponents.bundle in Resources */,
+				37B84A391B6F9FBA0087DDAA /* Settings.bundle in Resources */,
+				231325B419DAE6A400EB513C /* Main.storyboard in Resources */,
+				2365ACD419DD9BD400214F76 /* MAFUIComponents.bundle in Resources */,
+				231325B619DAE6A500EB513C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		231325BC19DAE6A500EB513C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2313259B19DAE6A400EB513C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A4419419EFB145003C25A6 /* ConverterUtils.m in Sources */,
+				96A31AFC19E6855E0066F731 /* MainViewController.m in Sources */,
+				96A7EE5719ED156900697704 /* DemoRequestExecution.m in Sources */,
+				37D0081D1B5E7006002AE7F1 /* EditContactViewController.m in Sources */,
+				37D824691A666F6400BFA150 /* OpportunityCollectionViewCell.m in Sources */,
+				37B2BADB1B68C95F0053CA87 /* EditAppointmentViewController.m in Sources */,
+				37CEF9401B67BB0100DD3A83 /* UIColor+Extension.m in Sources */,
+				96A597A219EC49DC007D2592 /* DemoOnlineStore.m in Sources */,
+				96A1965819E536D100478152 /* SAPStoreManager.m in Sources */,
+				96AC2AC419EC016600808769 /* BaseItem.m in Sources */,
+				26BC7F8B1A0CD5C70009399A /* LogViewerViewController.m in Sources */,
+				37B2BADE1B68F27F0053CA87 /* EditOpportunityViewController.m in Sources */,
+				96AC2AC319EC016600808769 /* Appointment.m in Sources */,
+				96A4419B19EFBE67003C25A6 /* AccountConverter.m in Sources */,
+				96AC2AC719EC016600808769 /* Opportunity.m in Sources */,
+				96A20FD619E3CD1F002DC017 /* LoginViewController.m in Sources */,
+				26BD236E19FFA22E0038EC25 /* SAPStoreOperation.m in Sources */,
+				231325A819DAE6A400EB513C /* AppDelegate.m in Sources */,
+				96A4419119EFAC13003C25A6 /* ContactConverter.m in Sources */,
+				96AC2AC619EC016600808769 /* Contact.m in Sources */,
+				26AC0EAF1A039BC500035660 /* APPCIDRequestFilter.m in Sources */,
+				37C636461A5FE469000E1B6E /* ContactCollectionViewCell.m in Sources */,
+				96A441A119EFC243003C25A6 /* OpportunityConverter.m in Sources */,
+				96A31AF919E6834C0066F731 /* BadgeCellTableViewCell.m in Sources */,
+				96AC2AAD19EBF58D00808769 /* DataManager.m in Sources */,
+				231325AB19DAE6A400EB513C /* SAPCRMOData.xcdatamodeld in Sources */,
+				231325A519DAE6A400EB513C /* main.m in Sources */,
+				37D824661A666A0F00BFA150 /* AppointmentCollectionViewCell.m in Sources */,
+				262558F41A0A64F20071A1E8 /* LogEntryTableViewCell.m in Sources */,
+				96AC2AC519EC016600808769 /* Collection.m in Sources */,
+				96AC2AC219EC016600808769 /* Account.m in Sources */,
+				26AC6ADE1A0B78C6002938B3 /* Settings.m in Sources */,
+				96A31B0019E689BE0066F731 /* Constants.m in Sources */,
+				96A4419819EFBCB4003C25A6 /* NSDate+Extension.m in Sources */,
+				377626061B53F01100889667 /* EditAccountViewController.m in Sources */,
+				96A4419E19EFC004003C25A6 /* AppointmentConverter.m in Sources */,
+				96A441A419EFC4A8003C25A6 /* ConverterFactory.m in Sources */,
+				262558E51A0A5FD70071A1E8 /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		231325BA19DAE6A500EB513C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E4788F1B55080D00EEABBF /* SAPCRMCUD_Tests.m in Sources */,
+				231325C519DAE6A500EB513C /* SAPCRMODataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		231325C019DAE6A500EB513C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2313259E19DAE6A400EB513C /* SAPCRMOData */;
+			targetProxy = 231325BF19DAE6A500EB513C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		231325B219DAE6A400EB513C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231325B319DAE6A400EB513C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		231325C619DAE6A500EB513C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		231325C719DAE6A500EB513C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		231325C919DAE6A500EB513C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = SAPCRMOData/SAPCRMOData.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SAPCRMOData/SAPCRMOData-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/target/headers/$(BUILD_STYLE)-$(PLATFORM_NAME)/**";
+				INFOPLIST_FILE = SAPCRMOData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/target/libs/$(BUILD_STYLE)-$(PLATFORM_NAME)/**";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SAP-AG.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		231325CA19DAE6A500EB513C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = SAPCRMOData/SAPCRMOData.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SAPCRMOData/SAPCRMOData-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/target/headers/$(BUILD_STYLE)-$(PLATFORM_NAME)/**";
+				INFOPLIST_FILE = SAPCRMOData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/target/libs/$(BUILD_STYLE)-$(PLATFORM_NAME)/**";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SAP-AG.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		231325CC19DAE6A500EB513C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../target/headers/$(BUILD_STYLE)-$(PLATFORM_NAME)/**",
+				);
+				INFOPLIST_FILE = SAPCRMODataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../target/libs/$(BUILD_STYLE)-$(PLATFORM_NAME)/**";
+				PRODUCT_BUNDLE_IDENTIFIER = "SAP-AG.--PRODUCT-NAME-rfc1034identifier-.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAPCRMOData.app/SAPCRMOData";
+			};
+			name = Debug;
+		};
+		231325CD19DAE6A500EB513C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../../target/headers/$(BUILD_STYLE)-$(PLATFORM_NAME)/**",
+				);
+				INFOPLIST_FILE = SAPCRMODataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../target/libs/$(BUILD_STYLE)-$(PLATFORM_NAME)/**";
+				PRODUCT_BUNDLE_IDENTIFIER = "SAP-AG.--PRODUCT-NAME-rfc1034identifier-.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAPCRMOData.app/SAPCRMOData";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2313259A19DAE6A400EB513C /* Build configuration list for PBXProject "SAPCRMOData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231325C619DAE6A500EB513C /* Debug */,
+				231325C719DAE6A500EB513C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		231325C819DAE6A500EB513C /* Build configuration list for PBXNativeTarget "SAPCRMOData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231325C919DAE6A500EB513C /* Debug */,
+				231325CA19DAE6A500EB513C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		231325CB19DAE6A500EB513C /* Build configuration list for PBXNativeTarget "SAPCRMODataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231325CC19DAE6A500EB513C /* Debug */,
+				231325CD19DAE6A500EB513C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		231325A919DAE6A400EB513C /* SAPCRMOData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				231325AA19DAE6A400EB513C /* SAPCRMOData.xcdatamodel */,
+			);
+			currentVersion = 231325AA19DAE6A400EB513C /* SAPCRMOData.xcdatamodel */;
+			path = SAPCRMOData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2313259719DAE6A400EB513C /* Project object */;
+}
