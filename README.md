@@ -1,7 +1,32 @@
 CRMODataApp
 ===========
-This application is showcasing the usage of the SAP Mobile Platform SDK for iOS. 
-You can get the SMP SDK v. 3.0.10 for iOS here: http://help.sap.com/smp3010sdk
+This application is showcasing the usage of the SAP Mobile Platform SDK for iOS.
+
+## How To Get Started
+* Download the [SAPCRMOData project](https://github.com/SAP/Mobile_SDK_oData_App/archive/master.zip)
+* Download and install the latest version of the [SMP SDK for iOS](http://help.sap.com/mobile-platform) 
+* Read the documentation on [Native OData App Development](http://help.sap.com/mobile-platform)
+* 
+## Configuring the project
+The [SAP Mobile SDK for iOS](http://help.sap.com/mobile-platform) are required to build this app. After downloading and running the installer, the dependencies can be easily configured using CocoaPods. 
+
+## Installation with CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries  in your projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+#### Podfile
+
+To integrate the SAP Mobile SDK into your Xcode project using CocoaPods, run the following command on the project's directory:
+
+```bash
+$ pod install
+```
+
+## Technical Details
 
 The following Mobile SDK frameworks are used:
 - ODataAPI
@@ -17,10 +42,11 @@ Three different modes are supported:
 - Offline (relies on the OData offline store)
 - Demo mode
 
-When used in online mode, one can edit, create or delete entities*.
+The demo mode can be used right away; note that creating, editing or deleting entities is restricted in demo mode.
 
-(*)The endpoint URL and app ID must be filled in in order for the app to work. 
-This can be done within Settings -> SAPCRMOData (see screenshot). Also, a valid user name and a password is required - except for demo mode.
+The online and offline mode require a compatible CRM endpoint.
+The endpoint URL and app ID must be filled in in order for the app to work. 
+This can be done within the device's Settings -> SAPCRMOData (see screenshot). Also, a valid user name and a password is required - except for demo mode.
 
 ![App Settings](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/settings.png)
 
@@ -36,4 +62,10 @@ Built-In Log Viewer:
 In-App Settings:
 ![In-App Settings](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/inappsettings.png)
 
+## Credits
 
+SAPCRMOData is owned and maintained by [SAP](http://go.sap.com/index.html).
+
+## License
+
+SAPCRMOData is released under the Apache License Version 2.0. See LICENSE for details.
