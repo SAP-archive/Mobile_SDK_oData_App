@@ -1,6 +1,8 @@
 CRMODataApp
 ===========
-This application is showcasing the usage of the SAP Mobile Platform SDK for iOS
+This application is showcasing the usage of the SAP Mobile Platform SDK for iOS. 
+You can get the latest version of the SMP SDK for iOS here: http://help.sap.com/smp3010sdk
+
 The following Mobile SDK frameworks are used:
 - ODataAPI
 - OData Online
@@ -22,12 +24,16 @@ This can be done within Settings -> SAPCRMOData (see screenshot). Also, a valid 
 
 ![App Settings](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/settings.png)
 
+The Login UI:
 ![The Login UI](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/login.png)
 
+The App's Main UI:
 ![The App's Main UI](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/appointments.png)
 
+Built-In Log Viewer:
 ![Built-In Log Viewer](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/logviewer.png)
 
+In-App Settings:
 ![In-App Settings](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/inappsettings.png)
 
 
