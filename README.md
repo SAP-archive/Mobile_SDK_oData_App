@@ -1,7 +1,7 @@
 CRMODataApp
 ===========
 This application is showcasing the usage of the SAP Mobile Platform SDK for iOS. 
-You can get the latest version of the SMP SDK for iOS here: http://help.sap.com/smp3010sdk
+You can get the SMP SDK v. 3.0.10 for iOS here: http://help.sap.com/smp3010sdk
 
 The following Mobile SDK frameworks are used:
 - ODataAPI
