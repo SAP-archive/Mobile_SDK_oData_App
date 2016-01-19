@@ -4,13 +4,12 @@ This application is showcasing the usage of the SAP Mobile Platform SDK for iOS.
 
 ## How To Get Started
 * Download the [SAPCRMOData project](https://github.com/SAP/Mobile_SDK_oData_App/archive/master.zip)
-* Download and install the latest version of the [SMP SDK for iOS](http://help.sap.com/mobile-platform) 
-* Read the documentation on [Native OData App Development](http://help.sap.com/mobile-platform)
-* 
-## Configuring the project
-The [SAP Mobile SDK for iOS](http://help.sap.com/mobile-platform) are required to build this app. After downloading and running the installer, the dependencies can be easily configured using CocoaPods. 
+* Visit the page of latest version of the [SMP SDK for iOS](http://help.sap.com/mobile-platform). Follow the installation steps described in the Installation Guide.
 
-## Installation with CocoaPods
+## Configuring the project
+The [SAP Mobile SDK for iOS](http://help.sap.com/mobile-platform) are required to build this app. After installing the required components, all dependencies can be configured using CocoaPods. 
+
+### Installation with CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries  in your projects. You can install it with the following command:
 
@@ -28,6 +27,8 @@ $ pod install
 
 ## Technical Details
 
+It is highly recommended to check out the documentation on [Native OData App Development](http://help.sap.com/mobile-platform).
+
 The following Mobile SDK frameworks are used:
 - ODataAPI
 - OData Online
@@ -37,7 +38,7 @@ The following Mobile SDK frameworks are used:
 - Supportability (for logging and tracing)
 - further libraries required due to dependencies
 
-Three different modes are supported:
+The SAPCRMOData app supports three different modes:
 - Online (default)
 - Offline (relies on the OData offline store)
 - Demo mode
