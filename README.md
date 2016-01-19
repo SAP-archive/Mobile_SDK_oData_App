@@ -7,7 +7,7 @@ This application is showcasing the usage of the SAP Mobile Platform SDK for iOS.
 * Visit the official [SMP SDK site](http://help.sap.com/mobile-platform). Navigate to the latest version of the iOS SDK and open the Installation Guide. Follow the installation steps described in the guide to download and instal the SAP Mobile SDK.
 
 ## Configuring the project
-The [SAP Mobile SDK for iOS](http://help.sap.com/mobile-platform) are required to build this app. After installing the required components, all dependencies can be configured using CocoaPods. 
+The [SAP Mobile SDK for iOS](http://help.sap.com/mobile-platform) is required to build this app. After installing the components, project dependencies can be configured using CocoaPods.
 
 ### Installation with CocoaPods
 
