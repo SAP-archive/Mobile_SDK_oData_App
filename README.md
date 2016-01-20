@@ -6,7 +6,7 @@ This application is showcasing the usage of the SAP Mobile Platform SDK for iOS.
 * Download the [SAPCRMOData project](https://github.com/SAP/Mobile_SDK_oData_App/archive/master.zip)
 * Visit the official [SMP SDK site](http://help.sap.com/mobile-platform). Navigate to the latest version of the iOS SDK and open the Installation Guide. Follow the installation steps described in the guide to download and instal the SAP Mobile SDK.
 
-## Configuring the project
+## Configuring the Project
 The [SAP Mobile SDK for iOS](http://help.sap.com/mobile-platform) is required to build this app. After installing the components, project dependencies can be configured using CocoaPods.
 
 ### Installation with CocoaPods
