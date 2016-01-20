@@ -45,22 +45,22 @@ The SAPCRMOData app supports three different modes:
 
 The demo mode can be used right away; note that creating, editing or deleting entities is restricted in demo mode.
 
-The online and offline mode require a compatible CRM endpoint.
-The endpoint URL and app ID must be filled in in order for the app to work. 
-This can be done within the device's Settings -> SAPCRMOData (see screenshot). Also, a valid user name and a password is required - except for demo mode.
+The online and offline modes require a compatible CRM endpoint; note that the endpoint URL and app ID must be provided in order for the app to work. 
+The URL and the app ID can be set within the device's Settings -> SAPCRMOData (see screenshot).
 
+#### App Settings
 ![App Settings](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/settings.png)
 
-The Login UI:
+#### The Login UI:
 ![The Login UI](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/login.png)
 
-The App's Main UI:
+#### The App's Main UI:
 ![The App's Main UI](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/appointments.png)
 
-Built-In Log Viewer:
+#### Built-In Log Viewer:
 ![Built-In Log Viewer](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/logviewer.png)
 
-In-App Settings:
+#### In-App Settings:
 ![In-App Settings](https://github.com/SAP/Mobile_SDK_oData_App/blob/screenshots/Screenshots/inappsettings.png)
 
 ## Credits
